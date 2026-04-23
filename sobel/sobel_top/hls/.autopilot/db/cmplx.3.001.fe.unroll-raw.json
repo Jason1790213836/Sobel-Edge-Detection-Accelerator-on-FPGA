@@ -1,0 +1,32 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "sobel_top.cpp",
+    "fileloc": 3,
+    "instructions": 7,
+    "memory_accesses": 0,
+    "name": "sobel_top",
+    "total_instructions": 397
+  },
+  "1": {
+    "basicblocks": 39,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 14,
+    "file": "sobel_core.cpp",
+    "fileloc": 15,
+    "instructions": 376,
+    "loads": {
+      "L": 18
+    },
+    "memory_accesses": 39,
+    "name": "sobel_core",
+    "stores": {
+      "L": 30
+    },
+    "total_instructions": 390
+  }
+}

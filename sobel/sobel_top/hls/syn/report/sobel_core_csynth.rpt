@@ -1,0 +1,206 @@
+
+
+================================================================
+== Vitis HLS Report for 'sobel_core'
+================================================================
+* Date:           Thu Apr 23 17:21:13 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 12 2025)
+* Project:        sobel_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  4.00 ns|  5.431 ns|     1.08 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max   | min | max |   Type  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |        2|        ?|  10.862 ns|         ?|    2|    ?|       no|
+    +---------+---------+-----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+----------+-----+-----+-------------------+
+        |                                                |                                     |  Latency (cycles) |  Latency (absolute)  |  Interval |      Pipeline     |
+        |                    Instance                    |                Module               |   min   |   max   |    min    |    max   | min | max |        Type       |
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+----------+-----+-----+-------------------+
+        |grp_sobel_core_Pipeline_VITIS_LOOP_31_1_fu_94   |sobel_core_Pipeline_VITIS_LOOP_31_1  |        3|     1922|  14.445 ns|  9.254 us|    0|    0|  loop pipeline stp|
+        |grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101  |sobel_core_Pipeline_VITIS_LOOP_47_4  |       36|        ?|   0.196 us|         ?|    0|    0|  loop pipeline stp|
+        +------------------------------------------------+-------------------------------------+---------+---------+-----------+----------+-----+-----+-------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    195|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    3|    3069|   1965|    -|
+|Memory           |        2|    -|       0|      0|    -|
+|Multiplexer      |        -|    -|       0|    243|    -|
+|Register         |        -|    -|      87|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        2|    3|    3156|   2403|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       ~0|    1|       2|      4|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------+-------------------------------------+---------+----+------+------+-----+
+    |                    Instance                    |                Module               | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +------------------------------------------------+-------------------------------------+---------+----+------+------+-----+
+    |mul_32s_32s_32_5_1_U29                          |mul_32s_32s_32_5_1                   |        0|   3|   215|     1|    0|
+    |grp_sobel_core_Pipeline_VITIS_LOOP_31_1_fu_94   |sobel_core_Pipeline_VITIS_LOOP_31_1  |        0|   0|    25|    62|    0|
+    |grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101  |sobel_core_Pipeline_VITIS_LOOP_47_4  |        0|   0|  2829|  1902|    0|
+    +------------------------------------------------+-------------------------------------+---------+----+------+------+-----+
+    |Total                                           |                                     |        0|   3|  3069|  1965|    0|
+    +------------------------------------------------+-------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +------------+--------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |   Memory   |                Module                | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +------------+--------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |linebuf0_U  |sobel_core_linebuf0_RAM_1P_BRAM_2R1W  |        1|  0|   0|    0|  1920|    8|     1|        15360|
+    |linebuf1_U  |sobel_core_linebuf0_RAM_1P_BRAM_2R1W  |        1|  0|   0|    0|  1920|    8|     1|        15360|
+    +------------+--------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total       |                                      |        2|  0|   0|    0|  3840|   16|     2|        30720|
+    +------------+--------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                           Variable Name                          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |add_ln84_fu_181_p2                                                |         +|   0|  0|  29|          22|           2|
+    |ap_block_state10_on_subcall_done                                  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op40_call_state10                                    |       and|   0|  0|   2|           1|           1|
+    |grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101_out_stream_TREADY  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln19_1_fu_153_p2                                             |      icmp|   0|  0|  39|          32|           1|
+    |icmp_ln19_fu_147_p2                                               |      icmp|   0|  0|  39|          32|           1|
+    |icmp_ln20_1_fu_168_p2                                             |      icmp|   0|  0|  39|          32|          11|
+    |icmp_ln20_fu_163_p2                                               |      icmp|   0|  0|  39|          32|          11|
+    |or_ln19_fu_159_p2                                                 |        or|   0|  0|   2|           1|           1|
+    |or_ln20_fu_173_p2                                                 |        or|   0|  0|   2|           1|           1|
+    +------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                             |          |   0|  0| 195|         155|          31|
+    +------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------+----+-----------+-----+-----------+
+    |        Name       | LUT| Input Size| Bits| Total Bits|
+    +-------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm          |  59|         11|    1|         11|
+    |in_stream_TREADY   |   9|          2|    1|          2|
+    |linebuf0_address0  |  14|          3|   11|         33|
+    |linebuf0_ce0       |  14|          3|    1|          3|
+    |linebuf0_d0        |  14|          3|    8|         24|
+    |linebuf0_we0       |  14|          3|    1|          3|
+    |linebuf1_address0  |  14|          3|   11|         33|
+    |linebuf1_ce0       |  14|          3|    1|          3|
+    |linebuf1_d0        |  14|          3|    8|         24|
+    |linebuf1_we0       |  14|          3|    1|          3|
+    |out_stream_TDATA   |   9|          2|    8|         16|
+    |out_stream_TDEST   |   9|          2|    1|          2|
+    |out_stream_TID     |   9|          2|    1|          2|
+    |out_stream_TKEEP   |   9|          2|    1|          2|
+    |out_stream_TLAST   |   9|          2|    1|          2|
+    |out_stream_TSTRB   |   9|          2|    1|          2|
+    |out_stream_TUSER   |   9|          2|    1|          2|
+    +-------------------+----+-----------+-----+-----------+
+    |Total              | 243|         51|   58|        167|
+    +-------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |                             Name                            | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |add_ln84_reg_239                                             |  22|   0|   22|          0|
+    |ap_CS_fsm                                                    |  10|   0|   10|          0|
+    |empty_reg_198                                                |  11|   0|   11|          0|
+    |grp_sobel_core_Pipeline_VITIS_LOOP_31_1_fu_94_ap_start_reg   |   1|   0|    1|          0|
+    |grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101_ap_start_reg  |   1|   0|    1|          0|
+    |icmp_ln19_1_reg_210                                          |   1|   0|    1|          0|
+    |icmp_ln19_reg_205                                            |   1|   0|    1|          0|
+    |icmp_ln20_1_reg_224                                          |   1|   0|    1|          0|
+    |icmp_ln20_reg_219                                            |   1|   0|    1|          0|
+    |or_ln19_reg_215                                              |   1|   0|    1|          0|
+    |or_ln20_reg_229                                              |   1|   0|    1|          0|
+    |out_stream_TDATA_reg                                         |   8|   0|    8|          0|
+    |out_stream_TDEST_reg                                         |   1|   0|    1|          0|
+    |out_stream_TID_reg                                           |   1|   0|    1|          0|
+    |out_stream_TKEEP_reg                                         |   1|   0|    1|          0|
+    |out_stream_TLAST_reg                                         |   1|   0|    1|          0|
+    |out_stream_TSTRB_reg                                         |   1|   0|    1|          0|
+    |out_stream_TUSER_reg                                         |   1|   0|    1|          0|
+    |trunc_ln45_reg_233                                           |  22|   0|   22|          0|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                        |  87|   0|   87|          0|
+    +-------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+---------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++-------------------+-----+-----+------------+---------------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|           sobel_core|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|           sobel_core|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|           sobel_core|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|           sobel_core|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|           sobel_core|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|           sobel_core|  return value|
+|in_stream_TDATA    |   in|    8|        axis|   in_stream_V_data_V|       pointer|
+|in_stream_TVALID   |   in|    1|        axis|   in_stream_V_dest_V|       pointer|
+|in_stream_TREADY   |  out|    1|        axis|   in_stream_V_dest_V|       pointer|
+|in_stream_TDEST    |   in|    1|        axis|   in_stream_V_dest_V|       pointer|
+|in_stream_TKEEP    |   in|    1|        axis|   in_stream_V_keep_V|       pointer|
+|in_stream_TSTRB    |   in|    1|        axis|   in_stream_V_strb_V|       pointer|
+|in_stream_TUSER    |   in|    1|        axis|   in_stream_V_user_V|       pointer|
+|in_stream_TLAST    |   in|    1|        axis|   in_stream_V_last_V|       pointer|
+|in_stream_TID      |   in|    1|        axis|     in_stream_V_id_V|       pointer|
+|out_stream_TDATA   |  out|    8|        axis|  out_stream_V_data_V|       pointer|
+|out_stream_TVALID  |  out|    1|        axis|  out_stream_V_dest_V|       pointer|
+|out_stream_TREADY  |   in|    1|        axis|  out_stream_V_dest_V|       pointer|
+|out_stream_TDEST   |  out|    1|        axis|  out_stream_V_dest_V|       pointer|
+|out_stream_TKEEP   |  out|    1|        axis|  out_stream_V_keep_V|       pointer|
+|out_stream_TSTRB   |  out|    1|        axis|  out_stream_V_strb_V|       pointer|
+|out_stream_TUSER   |  out|    1|        axis|  out_stream_V_user_V|       pointer|
+|out_stream_TLAST   |  out|    1|        axis|  out_stream_V_last_V|       pointer|
+|out_stream_TID     |  out|    1|        axis|    out_stream_V_id_V|       pointer|
+|width              |   in|   32|     ap_none|                width|        scalar|
+|height             |   in|   32|     ap_none|               height|        scalar|
++-------------------+-----+-----+------------+---------------------+--------------+
+

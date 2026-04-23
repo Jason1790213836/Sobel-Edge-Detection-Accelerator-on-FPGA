@@ -1,0 +1,207 @@
+
+
+set RtlHierarchyInfo {[
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"],
+		"CDFG" : "sobel_top",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "5", "EstimateLatencyMax" : "-1",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "in_stream_V_data_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "in_stream_V_data_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "in_stream_V_keep_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "in_stream_V_keep_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "in_stream_V_strb_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "in_stream_V_strb_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "in_stream_V_user_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "in_stream_V_user_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "in_stream_V_last_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "in_stream_V_last_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "in_stream_V_id_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "in_stream_V_id_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "in_stream_V_dest_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "in_stream_V_dest_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "out_stream_V_data_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "out_stream_V_data_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "out_stream_V_keep_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "out_stream_V_keep_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "out_stream_V_strb_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "out_stream_V_strb_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "out_stream_V_user_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "out_stream_V_user_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "out_stream_V_last_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "out_stream_V_last_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "out_stream_V_id_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "out_stream_V_id_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "out_stream_V_dest_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_sobel_core_fu_84", "Port" : "out_stream_V_dest_V", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+			{"Name" : "width", "Type" : "None", "Direction" : "I"},
+			{"Name" : "height", "Type" : "None", "Direction" : "I"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84", "Parent" : "0", "Child" : ["2", "3", "4", "6", "11"],
+		"CDFG" : "sobel_core",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2", "EstimateLatencyMax" : "-1",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "in_stream_V_data_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "in_stream_V_data_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "in_stream_V_keep_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "in_stream_V_keep_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "in_stream_V_strb_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "in_stream_V_strb_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "in_stream_V_user_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "in_stream_V_user_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "in_stream_V_last_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "in_stream_V_last_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "in_stream_V_id_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "in_stream_V_id_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "in_stream_V_dest_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "in_stream_V_dest_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "out_stream_V_data_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "out_stream_V_data_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "out_stream_V_keep_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "out_stream_V_keep_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "out_stream_V_strb_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "out_stream_V_strb_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "out_stream_V_user_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "out_stream_V_user_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "out_stream_V_last_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "out_stream_V_last_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "out_stream_V_id_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "out_stream_V_id_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "out_stream_V_dest_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"SubConnect" : [
+					{"ID" : "6", "SubInstance" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Port" : "out_stream_V_dest_V", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+			{"Name" : "width", "Type" : "None", "Direction" : "I"},
+			{"Name" : "height", "Type" : "None", "Direction" : "I"}]},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.linebuf0_U", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.linebuf1_U", "Parent" : "1"},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_31_1_fu_94", "Parent" : "1", "Child" : ["5"],
+		"CDFG" : "sobel_core_Pipeline_VITIS_LOOP_31_1",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3", "EstimateLatencyMax" : "1922",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "empty", "Type" : "None", "Direction" : "I"},
+			{"Name" : "linebuf0", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "linebuf1", "Type" : "Memory", "Direction" : "O"}],
+		"Loop" : [
+			{"Name" : "VITIS_LOOP_31_1", "PipelineType" : "UPC",
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "5", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_31_1_fu_94.flow_control_loop_pipe_sequential_init_U", "Parent" : "4"},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "Parent" : "1", "Child" : ["7", "8", "9", "10"],
+		"CDFG" : "sobel_core_Pipeline_VITIS_LOOP_47_4",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "36", "EstimateLatencyMax" : "-1",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "total", "Type" : "None", "Direction" : "I"},
+			{"Name" : "width", "Type" : "None", "Direction" : "I"},
+			{"Name" : "in_stream_V_data_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream",
+				"BlockSignal" : [
+					{"Name" : "in_stream_TDATA_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "in_stream_V_keep_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream"},
+			{"Name" : "in_stream_V_strb_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream"},
+			{"Name" : "in_stream_V_user_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream"},
+			{"Name" : "in_stream_V_last_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream"},
+			{"Name" : "in_stream_V_id_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream"},
+			{"Name" : "in_stream_V_dest_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "in_stream"},
+			{"Name" : "linebuf0", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "linebuf1", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "empty", "Type" : "None", "Direction" : "I"},
+			{"Name" : "add_ln84", "Type" : "None", "Direction" : "I"},
+			{"Name" : "out_stream_V_data_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream",
+				"BlockSignal" : [
+					{"Name" : "out_stream_TDATA_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "out_stream_V_keep_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream"},
+			{"Name" : "out_stream_V_strb_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream"},
+			{"Name" : "out_stream_V_user_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream"},
+			{"Name" : "out_stream_V_last_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream"},
+			{"Name" : "out_stream_V_id_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream"},
+			{"Name" : "out_stream_V_dest_V", "Type" : "Axis", "Direction" : "O", "BaseName" : "out_stream"}],
+		"Loop" : [
+			{"Name" : "VITIS_LOOP_47_4", "PipelineType" : "UPC",
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter34", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter34", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "7", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101.urem_22ns_11ns_22_26_1_U4", "Parent" : "6"},
+	{"ID" : "8", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101.icmp_64ns_64ns_1_2_1_U5", "Parent" : "6"},
+	{"ID" : "9", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101.icmp_64ns_64ns_1_2_1_U6", "Parent" : "6"},
+	{"ID" : "10", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101.flow_control_loop_pipe_sequential_init_U", "Parent" : "6"},
+	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.mul_32s_32s_32_5_1_U29", "Parent" : "1"},
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.CTRL_s_axi_U", "Parent" : "0"},
+	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_data_V_U", "Parent" : "0"},
+	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_keep_V_U", "Parent" : "0"},
+	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_strb_V_U", "Parent" : "0"},
+	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_user_V_U", "Parent" : "0"},
+	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_last_V_U", "Parent" : "0"},
+	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_id_V_U", "Parent" : "0"},
+	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_dest_V_U", "Parent" : "0"},
+	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_data_V_U", "Parent" : "0"},
+	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_keep_V_U", "Parent" : "0"},
+	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_strb_V_U", "Parent" : "0"},
+	{"ID" : "23", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_user_V_U", "Parent" : "0"},
+	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_last_V_U", "Parent" : "0"},
+	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_id_V_U", "Parent" : "0"},
+	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_dest_V_U", "Parent" : "0"}]}

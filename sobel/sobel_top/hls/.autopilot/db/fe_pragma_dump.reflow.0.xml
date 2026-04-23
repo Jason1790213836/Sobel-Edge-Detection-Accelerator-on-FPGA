@@ -1,0 +1,34 @@
+<pragmas>
+<pragma file="../src/sobel_top.cpp" line="7" pragmaType="interface" parentfunction="sobel_top" mode="axis" port="in_stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="../src/sobel_top.cpp" line="8" pragmaType="interface" parentfunction="sobel_top" mode="axis" port="out_stream" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="../src/sobel_top.cpp" line="10" pragmaType="interface" parentfunction="sobel_top" mode="s_axilite" port="width" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../src/sobel_top.cpp" line="11" pragmaType="interface" parentfunction="sobel_top" mode="s_axilite" port="height" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../src/sobel_top.cpp" line="12" pragmaType="interface" parentfunction="sobel_top" mode="s_axilite" port="" bundle="CTRL" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../src/sobel_core.cpp" line="48" pragmaType="pipeline" parentfunction="sobel_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/sobel_core.cpp" line="40" pragmaType="unroll" parentfunction="sobel_core" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/sobel_core.cpp" line="32" pragmaType="pipeline" parentfunction="sobel_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/sobel_core.cpp" line="24" pragmaType="bind_storage" parentfunction="sobel_core" op="666" impl="18" latency="-1" variable="linebuf0"/>
+<pragma file="../src/sobel_core.cpp" line="25" pragmaType="bind_storage" parentfunction="sobel_core" op="666" impl="18" latency="-1" variable="linebuf1"/>
+<pragma file="../src/sobel_core.cpp" line="28" pragmaType="array_partition" parentfunction="sobel_core" dim="0" factor="0" mode="complete" dynamic="0" variable="window"/>
+<pragma file="../src/window_generator.cpp" line="8" pragmaType="inline" parentfunction="window_generator" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="../src/sobel_core.cpp" line="11" pragmaType="inline" parentfunction="iabs_int" off="0" region="0" recursive="0"/>
+<pragma file="../src/sobel_core.cpp" line="4" pragmaType="inline" parentfunction="clip_u8" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_keep_ptr" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_data_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_last_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_strb_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDU1_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_id_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_dest_ptr" off="0" region="0" recursive="0"/>
+</pragmas>

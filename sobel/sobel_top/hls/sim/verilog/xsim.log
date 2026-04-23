@@ -1,0 +1,510 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Apr 23 17:28:55 2026
+# Process ID         : 30472
+# Current directory  : C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog
+# Command line       : xsim.exe -source {xsim.dir/sobel_top/xsim_script.tcl}
+# Log file           : C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/xsim.log
+# Journal file       : C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog\xsim.jou
+# Running On         : LAPTOP-MG1ABMI7
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : AMD Ryzen 9 4900HS with Radeon Graphics         
+# CPU Frequency      : 2994 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16556 MB
+# Swap memory        : 23567 MB
+# Total Virtual      : 40124 MB
+# Available Virtual  : 5595 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/sobel_top/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.6\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.7 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.7\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.4\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.5 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.5\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc709\1.8\board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.1\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385_1:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385_2\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_mpsoc\1.0\board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_rfsoc\1.0\board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.0\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.1\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zc706\1.4\board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.5 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zc706\1.5\board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.3\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.4\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.2\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.3\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.4\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1275\1.0\board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1285\1.0\board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208\production\2.0\board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216\production\2.0\board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+current_fileset: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1619.613 ; gain = 149.562
+# xsim {sobel_top} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=sobel_top_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -view {{sobel_top_dataflow_ana.wcfg}} -tclbatch {sobel_top.tcl} -protoinst {sobel_top.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file sobel_top.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sobel_top_top/AESL_inst_sobel_top//AESL_inst_sobel_top_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sobel_top_top/AESL_inst_sobel_top/grp_sobel_core_fu_84/grp_sobel_core_Pipeline_VITIS_LOOP_31_1_fu_94/grp_sobel_core_Pipeline_VITIS_LOOP_31_1_fu_94_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sobel_top_top/AESL_inst_sobel_top/grp_sobel_core_fu_84/grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101/grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_sobel_top_top/AESL_inst_sobel_top/grp_sobel_core_fu_84/grp_sobel_core_fu_84_activity
+Time resolution is 1 ps
+open_wave_config sobel_top_dataflow_ana.wcfg
+source sobel_top.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_sobel_top_top/AESL_inst_sobel_top/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set cinoutgroup [add_wave_group "C InOuts" -into $designtopgroup]
+## set width__height__return_group [add_wave_group width__height__return(axi_slave) -into $cinoutgroup]
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/interrupt -into $width__height__return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_BRESP -into $width__height__return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_BREADY -into $width__height__return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_BVALID -into $width__height__return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_RRESP -into $width__height__return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_RDATA -into $width__height__return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_RREADY -into $width__height__return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_RVALID -into $width__height__return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_ARREADY -into $width__height__return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_ARVALID -into $width__height__return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_ARADDR -into $width__height__return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_WSTRB -into $width__height__return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_WDATA -into $width__height__return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_WREADY -into $width__height__return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_WVALID -into $width__height__return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_AWREADY -into $width__height__return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_AWVALID -into $width__height__return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/s_axi_CTRL_AWADDR -into $width__height__return_group -radix hex
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(axis) -into $coutputgroup]
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/out_stream_TDEST -into $return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/out_stream_TID -into $return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/out_stream_TLAST -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/out_stream_TUSER -into $return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/out_stream_TSTRB -into $return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/out_stream_TKEEP -into $return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/out_stream_TREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/out_stream_TVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/out_stream_TDATA -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(axis) -into $cinputgroup]
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/in_stream_TDEST -into $return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/in_stream_TID -into $return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/in_stream_TLAST -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/in_stream_TUSER -into $return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/in_stream_TSTRB -into $return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/in_stream_TKEEP -into $return_group -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/in_stream_TREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/in_stream_TVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/in_stream_TDATA -into $return_group -radix hex
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_sobel_top_top/AESL_inst_sobel_top/ap_clk -into $clockgroup
+## save_wave_config sobel_top.wcfg
+## run all
+UVM_INFO C:/AMDDesignTools/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO C:/AMDDesignTools/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO C:/AMDDesignTools/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------------------------------------------------------------
+Name                                                    Type                                   Size  Value          
+--------------------------------------------------------------------------------------------------------------------
+uvm_test_top                                            sobel_top_test_lib                     -     @370           
+  top_env                                               sobel_top_env                          -     @381           
+    axi_lite_CTRL                                       uvm_env                                -     @428           
+      item_rtr_port                                     uvm_analysis_port                      -     @447           
+      item_wtr_port                                     uvm_analysis_port                      -     @437           
+      master                                            uvm_agent                              -     @840           
+        ardrv                                           uvm_driver #(REQ,RSP)                  -     @1515          
+          item_read_imp                                 uvm_analysis_port                      -     @1544          
+          rsp_port                                      uvm_analysis_port                      -     @1534          
+          seq_item_port                                 uvm_seq_item_pull_port                 -     @1524          
+          m_num_sent                                    integral                               32    'h0            
+        arsqr                                           axi_sequencer                          -     @1554          
+          rsp_export                                    uvm_analysis_export                    -     @1563          
+          seq_item_export                               uvm_seq_item_pull_imp                  -     @1681          
+          arbitration_queue                             array                                  0     -              
+          lock_queue                                    array                                  0     -              
+          num_last_reqs                                 integral                               32    'd1            
+          num_last_rsps                                 integral                               32    'd1            
+        awdrv                                           uvm_driver #(REQ,RSP)                  -     @987           
+          item_read_imp                                 uvm_analysis_port                      -     @1016          
+          rsp_port                                      uvm_analysis_port                      -     @1006          
+          seq_item_port                                 uvm_seq_item_pull_port                 -     @996           
+          m_num_sent                                    integral                               32    'h0            
+        awsqr                                           axi_sequencer                          -     @1026          
+          rsp_export                                    uvm_analysis_export                    -     @1035          
+          seq_item_export                               uvm_seq_item_pull_imp                  -     @1153          
+          arbitration_queue                             array                                  0     -              
+          lock_queue                                    array                                  0     -              
+          num_last_reqs                                 integral                               32    'd1            
+          num_last_rsps                                 integral                               32    'd1            
+        bdrv                                            uvm_driver #(REQ,RSP)                  -     @1339          
+          item_read_imp                                 uvm_analysis_port                      -     @1368          
+          rsp_port                                      uvm_analysis_port                      -     @1358          
+          seq_item_port                                 uvm_seq_item_pull_port                 -     @1348          
+          m_num_sent                                    integral                               32    'h0            
+        bsqr                                            axi_sequencer                          -     @1378          
+          rsp_export                                    uvm_analysis_export                    -     @1387          
+          seq_item_export                               uvm_seq_item_pull_imp                  -     @1505          
+          arbitration_queue                             array                                  0     -              
+          lock_queue                                    array                                  0     -              
+          num_last_reqs                                 integral                               32    'd1            
+          num_last_rsps                                 integral                               32    'd1            
+        rdrv                                            uvm_driver #(REQ,RSP)                  -     @1691          
+          item_read_imp                                 uvm_analysis_port                      -     @1720          
+          rsp_port                                      uvm_analysis_port                      -     @1710          
+          seq_item_port                                 uvm_seq_item_pull_port                 -     @1700          
+          m_num_sent                                    integral                               32    'h0            
+        rsqr                                            axi_sequencer                          -     @1730          
+          rsp_export                                    uvm_analysis_export                    -     @1739          
+          seq_item_export                               uvm_seq_item_pull_imp                  -     @1857          
+          arbitration_queue                             array                                  0     -              
+          lock_queue                                    array                                  0     -              
+          num_last_reqs                                 integral                               32    'd1            
+          num_last_rsps                                 integral                               32    'd1            
+        wdrv                                            uvm_driver #(REQ,RSP)                  -     @1163          
+          item_read_imp                                 uvm_analysis_port                      -     @1192          
+          rsp_port                                      uvm_analysis_port                      -     @1182          
+          seq_item_port                                 uvm_seq_item_pull_port                 -     @1172          
+          m_num_sent                                    integral                               32    'h0            
+        wsqr                                            axi_sequencer                          -     @1202          
+          rsp_export                                    uvm_analysis_export                    -     @1211          
+          seq_item_export                               uvm_seq_item_pull_imp                  -     @1329          
+          arbitration_queue                             array                                  0     -              
+          lock_queue                                    array                                  0     -              
+          num_last_reqs                                 integral                               32    'd1            
+          num_last_rsps                                 integral                               32    'd1            
+      monitor                                           uvm_monitor                            -     @662           
+        item_ar2r_port                                  uvm_analysis_port                      -     @731           
+        item_ar_port                                    uvm_analysis_port                      -     @701           
+        item_aw2b_port                                  uvm_analysis_port                      -     @721           
+        item_aw_port                                    uvm_analysis_port                      -     @671           
+        item_b_port                                     uvm_analysis_port                      -     @691           
+        item_r_port                                     uvm_analysis_port                      -     @711           
+        item_w_port                                     uvm_analysis_port                      -     @681           
+        checks_enable                                   integral                               1     'h1            
+        coverage_enable                                 integral                               1     'h1            
+      state                                             axi_state                              -     @741           
+        ar2r_imp                                        uvm_analysis_imp_ar2r                  -     @810           
+        ar_imp                                          uvm_analysis_imp_ar                    -     @780           
+        aw2b_imp                                        uvm_analysis_imp_aw2b                  -     @800           
+        aw_imp                                          uvm_analysis_imp_aw                    -     @750           
+        b_imp                                           uvm_analysis_imp_b                     -     @770           
+        item_rtr_port                                   uvm_analysis_port                      -     @830           
+        item_wtr_port                                   uvm_analysis_port                      -     @820           
+        r_imp                                           uvm_analysis_imp_r                     -     @790           
+        w_imp                                           uvm_analysis_imp_w                     -     @760           
+        avg_rate                                        integral                               32    'h0            
+        exp_rate                                        integral                               32    'h0            
+        win_size                                        integral                               32    'h0            
+        bqnum_for_slaseq                                integral                               32    'h0            
+        rq_from_model_num                               integral                               32    'h0            
+      vsqr                                              axi_virtual_sequencer                  -     @849           
+        rsp_export                                      uvm_analysis_export                    -     @858           
+        seq_item_export                                 uvm_seq_item_pull_imp                  -     @976           
+        arbitration_queue                               array                                  0     -              
+        lock_queue                                      array                                  0     -              
+        num_last_reqs                                   integral                               32    'd1            
+        num_last_rsps                                   integral                               32    'd1            
+      cfg                                               axi_cfg                                -     @400           
+        has_checker                                     integral                               1     'h1            
+        has_coverage                                    integral                               1     'h1            
+        id_num                                          integral                               32    'h1            
+        reset_level                                     reset_level_enum                       32    RESET_LEVEL_LOW
+        drv_type                                        drv_type_enum                          32    MASTER         
+        write_latency_mode                              latency_mode_enum                      32    CHANNEL_FIRST  
+        read_latency_mode                               latency_mode_enum                      32    CHANNEL_FIRST  
+        clatency                                        axi_latency                            -     @424           
+          wr_latency                                    integral                               32    'h0            
+          rd_latency                                    integral                               32    'h0            
+    env_master_svr_in_stream                            uvm_env                                -     @401           
+      m_agt                                             uvm_agent                              -     @1935          
+        drv                                             uvm_driver #(REQ,RSP)                  -     @2083          
+          rsp_port                                      uvm_analysis_port                      -     @2102          
+          seq_item_port                                 uvm_seq_item_pull_port                 -     @2092          
+        mon                                             uvm_monitor                            -     @2112          
+          item_collect_port                             uvm_analysis_port                      -     @2123          
+        sqr                                             uvm_sequencer                          -     @1946          
+          rsp_export                                    uvm_analysis_export                    -     @1955          
+          seq_item_export                               uvm_seq_item_pull_imp                  -     @2073          
+          arbitration_queue                             array                                  0     -              
+          lock_queue                                    array                                  0     -              
+          num_last_reqs                                 integral                               32    'd1            
+          num_last_rsps                                 integral                               32    'd1            
+    env_slave_svr_out_stream                            uvm_env                                -     @414           
+      s_agt                                             uvm_agent                              -     @2141          
+        drv                                             uvm_driver #(REQ,RSP)                  -     @2289          
+          rsp_port                                      uvm_analysis_port                      -     @2308          
+          seq_item_port                                 uvm_seq_item_pull_port                 -     @2298          
+        mon                                             uvm_monitor                            -     @2318          
+          item_collect_port                             uvm_analysis_port                      -     @2329          
+        sqr                                             uvm_sequencer                          -     @2152          
+          rsp_export                                    uvm_analysis_export                    -     @2161          
+          seq_item_export                               uvm_seq_item_pull_imp                  -     @2279          
+          arbitration_queue                             array                                  0     -              
+          lock_queue                                    array                                  0     -              
+          num_last_reqs                                 integral                               32    'd1            
+          num_last_rsps                                 integral                               32    'd1            
+    refm                                                sobel_top_reference_model              -     @457           
+      trans_num_idx                                     integral                               32    'h0            
+    sobel_top_virtual_sqr                               sobel_top_virtual_sequencer            -     @519           
+      rsp_export                                        uvm_analysis_export                    -     @528           
+      seq_item_export                                   uvm_seq_item_pull_imp                  -     @646           
+      arbitration_queue                                 array                                  0     -              
+      lock_queue                                        array                                  0     -              
+      num_last_reqs                                     integral                               32    'd1            
+      num_last_rsps                                     integral                               32    'd1            
+    subsys_mon                                          sobel_top_subsystem_monitor            -     @470           
+      CTRL_rtr_imp                                      uvm_analysis_imp_axi_rtr_CTRL          -     @509           
+      CTRL_wtr_imp                                      uvm_analysis_imp_axi_wtr_CTRL          -     @499           
+      scbd                                              sobel_top_scoreboard                   -     @2356          
+        refm                                            sobel_top_reference_model              -     @457           
+          trans_num_idx                                 integral                               32    'h0            
+        file_rd_TVOUT_transaction_size                  <unknown>                              -     @2366          
+          TV_FILE                                       string                                 0     ""             
+          fp                                            integral                               32    'hxxxxxxxx     
+          TV_FILE_num                                   integral                               32    'h0            
+          HEX_read                                      integral                               32    'h0            
+          DEC_read                                      integral                               32    'h0            
+          is_binary                                     integral                               32    'h0            
+          TV_FILE_COMPARE                               string                                 0     ""             
+          fp_compare                                    integral                               32    'hxxxxxxxx     
+        TVOUT_transaction_size_queue                    da(integral)                           0     -              
+        file_wr_port_out_stream_out_stream_TDATA        <unknown>                              -     @2367          
+          TV_FILE                                       string                                 0     ""             
+          fp                                            integral                               32    'hxxxxxxxx     
+          file_open                                     integral                               32    'h0            
+          write_file_done                               integral                               32    'h0            
+          write_section_done                            integral                               32    'h0            
+          TRANSACTION_NUM                               integral                               32    'h0            
+          transaction_num_idx                           integral                               32    'h0            
+          TRANSACTION_DEPTH                             integral                               32    'h0            
+          TRANSACTION_DEPTH_queue                       da(integral)                           0     -              
+          TRANSACTION_DEPTH_queue_for_depth_check       da(integral)                           0     -              
+          transaction_depth_idx                         integral                               32    'h0            
+          ap_done_num_idx                               integral                               32    'h0            
+          is_binary                                     integral                               32    'h0            
+        write_file_done_out_stream_out_stream_TDATA     integral                               32    'h0            
+        write_section_done_out_stream_out_stream_TDATA  integral                               32    'h0            
+        file_wr_port_out_stream_out_stream_TKEEP        <unknown>                              -     @2368          
+          TV_FILE                                       string                                 0     ""             
+          fp                                            integral                               32    'hxxxxxxxx     
+          file_open                                     integral                               32    'h0            
+          write_file_done                               integral                               32    'h0            
+          write_section_done                            integral                               32    'h0            
+          TRANSACTION_NUM                               integral                               32    'h0            
+          transaction_num_idx                           integral                               32    'h0            
+          TRANSACTION_DEPTH                             integral                               32    'h0            
+          TRANSACTION_DEPTH_queue                       da(integral)                           0     -              
+          TRANSACTION_DEPTH_queue_for_depth_check       da(integral)                           0     -              
+          transaction_depth_idx                         integral                               32    'h0            
+          ap_done_num_idx                               integral                               32    'h0            
+          is_binary                                     integral                               32    'h0            
+        write_file_done_out_stream_out_stream_TKEEP     integral                               32    'h0            
+        write_section_done_out_stream_out_stream_TKEEP  integral                               32    'h0            
+        file_wr_port_out_stream_out_stream_TSTRB        <unknown>                              -     @2369          
+          TV_FILE                                       string                                 0     ""             
+          fp                                            integral                               32    'hxxxxxxxx     
+          file_open                                     integral                               32    'h0            
+          write_file_done                               integral                               32    'h0            
+          write_section_done                            integral                               32    'h0            
+          TRANSACTION_NUM                               integral                               32    'h0            
+          transaction_num_idx                           integral                               32    'h0            
+          TRANSACTION_DEPTH                             integral                               32    'h0            
+          TRANSACTION_DEPTH_queue                       da(integral)                           0     -              
+          TRANSACTION_DEPTH_queue_for_depth_check       da(integral)                           0     -              
+          transaction_depth_idx                         integral                               32    'h0            
+          ap_done_num_idx                               integral                               32    'h0            
+          is_binary                                     integral                               32    'h0            
+        write_file_done_out_stream_out_stream_TSTRB     integral                               32    'h0            
+        write_section_done_out_stream_out_stream_TSTRB  integral                               32    'h0            
+        file_wr_port_out_stream_out_stream_TUSER        <unknown>                              -     @2370          
+          TV_FILE                                       string                                 0     ""             
+          fp                                            integral                               32    'hxxxxxxxx     
+          file_open                                     integral                               32    'h0            
+          write_file_done                               integral                               32    'h0            
+          write_section_done                            integral                               32    'h0            
+          TRANSACTION_NUM                               integral                               32    'h0            
+          transaction_num_idx                           integral                               32    'h0            
+          TRANSACTION_DEPTH                             integral                               32    'h0            
+          TRANSACTION_DEPTH_queue                       da(integral)                           0     -              
+          TRANSACTION_DEPTH_queue_for_depth_check       da(integral)                           0     -              
+          transaction_depth_idx                         integral                               32    'h0            
+          ap_done_num_idx                               integral                               32    'h0            
+          is_binary                                     integral                               32    'h0            
+        write_file_done_out_stream_out_stream_TUSER     integral                               32    'h0            
+        write_section_done_out_stream_out_stream_TUSER  integral                               32    'h0            
+        file_wr_port_out_stream_out_stream_TLAST        <unknown>                              -     @2371          
+          TV_FILE                                       string                                 0     ""             
+          fp                                            integral                               32    'hxxxxxxxx     
+          file_open                                     integral                               32    'h0            
+          write_file_done                               integral                               32    'h0            
+          write_section_done                            integral                               32    'h0            
+          TRANSACTION_NUM                               integral                               32    'h0            
+          transaction_num_idx                           integral                               32    'h0            
+          TRANSACTION_DEPTH                             integral                               32    'h0            
+          TRANSACTION_DEPTH_queue                       da(integral)                           0     -              
+          TRANSACTION_DEPTH_queue_for_depth_check       da(integral)                           0     -              
+          transaction_depth_idx                         integral                               32    'h0            
+          ap_done_num_idx                               integral                               32    'h0            
+          is_binary                                     integral                               32    'h0            
+        write_file_done_out_stream_out_stream_TLAST     integral                               32    'h0            
+        write_section_done_out_stream_out_stream_TLAST  integral                               32    'h0            
+        file_wr_port_out_stream_out_stream_TID          <unknown>                              -     @2372          
+          TV_FILE                                       string                                 0     ""             
+          fp                                            integral                               32    'hxxxxxxxx     
+          file_open                                     integral                               32    'h0            
+          write_file_done                               integral                               32    'h0            
+          write_section_done                            integral                               32    'h0            
+          TRANSACTION_NUM                               integral                               32    'h0            
+          transaction_num_idx                           integral                               32    'h0            
+          TRANSACTION_DEPTH                             integral                               32    'h0            
+          TRANSACTION_DEPTH_queue                       da(integral)                           0     -              
+          TRANSACTION_DEPTH_queue_for_depth_check       da(integral)                           0     -              
+          transaction_depth_idx                         integral                               32    'h0            
+          ap_done_num_idx                               integral                               32    'h0            
+          is_binary                                     integral                               32    'h0            
+        write_file_done_out_stream_out_stream_TID       integral                               32    'h0            
+        write_section_done_out_stream_out_stream_TID    integral                               32    'h0            
+        file_wr_port_out_stream_out_stream_TDEST        <unknown>                              -     @2373          
+          TV_FILE                                       string                                 0     ""             
+          fp                                            integral                               32    'hxxxxxxxx     
+          file_open                                     integral                               32    'h0            
+          write_file_done                               integral                               32    'h0            
+          write_section_done                            integral                               32    'h0            
+          TRANSACTION_NUM                               integral                               32    'h0            
+          transaction_num_idx                           integral                               32    'h0            
+          TRANSACTION_DEPTH                             integral                               32    'h0            
+          TRANSACTION_DEPTH_queue                       da(integral)                           0     -              
+          TRANSACTION_DEPTH_queue_for_depth_check       da(integral)                           0     -              
+          transaction_depth_idx                         integral                               32    'h0            
+          ap_done_num_idx                               integral                               32    'h0            
+          is_binary                                     integral                               32    'h0            
+        write_file_done_out_stream_out_stream_TDEST     integral                               32    'h0            
+        write_section_done_out_stream_out_stream_TDEST  integral                               32    'h0            
+      svr_master_in_stream_imp                          uvm_analysis_imp_svr_master_in_stream  -     @479           
+      svr_slave_out_stream_imp                          uvm_analysis_imp_svr_slave_out_stream  -     @489           
+    env_master_svr_in_stream                            uvm_env                                -     @401           
+    env_slave_svr_out_stream                            uvm_env                                -     @414           
+    refm                                                sobel_top_reference_model              -     @457           
+    sobel_top_virtual_sqr                               sobel_top_virtual_sequencer            -     @519           
+    sobel_top_cfg                                       sobel_top_config                       -     @395           
+      port_in_stream_cfg                                svr_config                             -     @396           
+        svr_type                                        svr_inst_type                          32    SVR_MASTER     
+        prt_type                                        svr_protocol_type                      32    AXIS           
+        is_active                                       svr_active_passive_enum                1     SVR_ACTIVE     
+        reset_level                                     svr_reset_level_enum                   1     RESET_LEVEL_LOW
+        spec_cfg                                        svr_spec_cfg_enum                      32    NORMAL         
+        clatency                                        svr_latency                            -     @397           
+          transfer_latency                              integral                               32    'h0            
+      port_out_stream_cfg                               svr_config                             -     @398           
+        svr_type                                        svr_inst_type                          32    SVR_SLAVE      
+        prt_type                                        svr_protocol_type                      32    AXIS           
+        is_active                                       svr_active_passive_enum                1     SVR_ACTIVE     
+        reset_level                                     svr_reset_level_enum                   1     RESET_LEVEL_LOW
+        spec_cfg                                        svr_spec_cfg_enum                      32    NORMAL         
+        clatency                                        svr_latency                            -     @399           
+          transfer_latency                              integral                               32    'h0            
+      CTRL_cfg                                          axi_cfg                                -     @400           
+        has_checker                                     integral                               1     'h1            
+        has_coverage                                    integral                               1     'h1            
+        id_num                                          integral                               32    'h1            
+        reset_level                                     reset_level_enum                       32    RESET_LEVEL_LOW
+        drv_type                                        drv_type_enum                          32    MASTER         
+        write_latency_mode                              latency_mode_enum                      32    CHANNEL_FIRST  
+        read_latency_mode                               latency_mode_enum                      32    CHANNEL_FIRST  
+        clatency                                        axi_latency                            -     @424           
+          wr_latency                                    integral                               32    'h0            
+          rd_latency                                    integral                               32    'h0            
+      check_ena                                         integral                               32    'h0            
+      cover_ena                                         integral                               32    'h0            
+--------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO C:/AMDDesignTools/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "110000"

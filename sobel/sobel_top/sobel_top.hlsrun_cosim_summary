@@ -1,0 +1,180 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\sobel_top.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "04/23/26 17:25:34",
+ "timestampMillis": "1776979534463",
+ "buildStep": {
+  "cmdId": "f0214a4f-8e8b-4788-abff-8d952a80a6b5",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\logs\\sobel_top.steps.log",
+  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --cosim --config C:\\Users\\57778\\Desktop\\sobel\\sobel\\hls_config.cfg --work_dir sobel_top ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "C:\\Users\\57778\\Desktop\\sobel\\sobel\\hls_config.cfg",
+   "--work_dir",
+   "sobel_top"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\57778\\Desktop\\sobel\\sobel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/23/26 17:25:34",
+ "timestampMillis": "1776979534464",
+ "status": {
+  "cmdId": "f0214a4f-8e8b-4788-abff-8d952a80a6b5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "04/23/26 17:25:47",
+ "timestampMillis": "1776979547758",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sobel_top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\57778\\Desktop\\sobel\\src\\sobel.hpp",
+     "C:/Users\\57778\\Desktop\\sobel\\src\\sobel_core.cpp",
+     "C:/Users\\57778\\Desktop\\sobel\\src\\sobel_top.cpp",
+     "C:/Users\\57778\\Desktop\\sobel\\src\\window_generator.cpp",
+     "C:/Users\\57778\\Desktop\\sobel\\src\\sobel_ref.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "04/23/26 17:25:47",
+ "timestampMillis": "1776979547762",
+ "buildStep": {
+  "cmdId": "75878b85-9dc5-40aa-b0a6-899426970685",
+  "name": "",
+  "logFile": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\57778\\Desktop\\sobel\\sobel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/23/26 17:25:47",
+ "timestampMillis": "1776979547764",
+ "status": {
+  "cmdId": "75878b85-9dc5-40aa-b0a6-899426970685",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/23/26 17:25:47",
+ "timestampMillis": "1776979547764",
+ "report": {
+  "path": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\hls\\sim\\report\\sobel_top_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/23/26 17:25:47",
+ "timestampMillis": "1776979547766",
+ "report": {
+  "path": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/23/26 17:25:47",
+ "timestampMillis": "1776979547767",
+ "report": {
+  "path": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/23/26 17:25:47",
+ "timestampMillis": "1776979547769",
+ "report": {
+  "path": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/23/26 17:25:47",
+ "timestampMillis": "1776979547770",
+ "report": {
+  "path": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,68 @@
+{
+    "1": {
+        "name": "sobel_core_Pipeline_VITIS_LOOP_47_4",
+        "file": "..\/src\/sobel_core.cpp",
+        "fileloc": "47",
+        "instructions": "133",
+        "total_instructions": "133",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "28",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "13"
+        },
+        "stores": {
+            "L": "24"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "sobel_core",
+        "file": "sobel_core.cpp",
+        "fileloc": "15",
+        "instructions": "26",
+        "total_instructions": "180",
+        "calls": "3 1",
+        "basicblocks": "4",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "3"
+    },
+    "3": {
+        "name": "sobel_core_Pipeline_VITIS_LOOP_31_1",
+        "file": "..\/src\/sobel_core.cpp",
+        "fileloc": "31",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "sobel_top",
+        "file": "sobel_top.cpp",
+        "fileloc": "3",
+        "instructions": "30",
+        "total_instructions": "210",
+        "calls": "2",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    }
+}

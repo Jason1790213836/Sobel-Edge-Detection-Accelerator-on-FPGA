@@ -1,0 +1,66 @@
+[
+  {
+    "directory": "C:\\Users\\57778\\Desktop\\sobel\\sobel",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sobel_top",
+      "-c",
+      "C:\\Users\\57778\\Desktop\\sobel\\src\\sobel_core.cpp"
+    ],
+    "file": "C:\\Users\\57778\\Desktop\\sobel\\src\\sobel_core.cpp"
+  },
+  {
+    "directory": "C:\\Users\\57778\\Desktop\\sobel\\sobel",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sobel_top",
+      "-c",
+      "C:\\Users\\57778\\Desktop\\sobel\\src\\sobel_top.cpp"
+    ],
+    "file": "C:\\Users\\57778\\Desktop\\sobel\\src\\sobel_top.cpp"
+  },
+  {
+    "directory": "C:\\Users\\57778\\Desktop\\sobel\\sobel",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sobel_top",
+      "-c",
+      "C:\\Users\\57778\\Desktop\\sobel\\src\\window_generator.cpp"
+    ],
+    "file": "C:\\Users\\57778\\Desktop\\sobel\\src\\window_generator.cpp"
+  },
+  {
+    "directory": "C:\\Users\\57778\\Desktop\\sobel\\sobel",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sobel_top",
+      "-c",
+      "C:\\Users\\57778\\Desktop\\sobel\\src\\sobel_ref.cpp"
+    ],
+    "file": "C:\\Users\\57778\\Desktop\\sobel\\src\\sobel_ref.cpp"
+  },
+  {
+    "directory": "C:\\Users\\57778\\Desktop\\sobel\\sobel",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-c",
+      "C:\\Users\\57778\\Desktop\\sobel\\tb\\tb_sobel.cpp"
+    ],
+    "file": "C:\\Users\\57778\\Desktop\\sobel\\tb\\tb_sobel.cpp"
+  }
+]

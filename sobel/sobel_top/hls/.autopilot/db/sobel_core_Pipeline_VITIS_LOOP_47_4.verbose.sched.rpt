@@ -1,0 +1,562 @@
+
+
+================================================================
+== Vitis HLS Report for 'sobel_core_Pipeline_VITIS_LOOP_47_4'
+================================================================
+* Date:           Thu Apr 23 17:21:09 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 12 2025)
+* Project:        sobel_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  4.00 ns|  5.431 ns|     1.08 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |       36|        ?|  0.196 us|         ?|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- VITIS_LOOP_47_4  |       34|        ?|        35|          1|          1|  1 ~ ?|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+-------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 35
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 35
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 35, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.43>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%reuse_addr_reg52 = alloca i32 1"   --->   Operation 38 'alloca' 'reuse_addr_reg52' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%reuse_reg51 = alloca i32 1"   --->   Operation 39 'alloca' 'reuse_reg51' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%reuse_addr_reg = alloca i32 1"   --->   Operation 40 'alloca' 'reuse_addr_reg' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%reuse_reg = alloca i32 1"   --->   Operation 41 'alloca' 'reuse_reg' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%idx = alloca i32 1" [../src/sobel_core.cpp:47]   --->   Operation 42 'alloca' 'idx' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%p_0_0_0157277 = alloca i32 1"   --->   Operation 43 'alloca' 'p_0_0_0157277' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%p_0_0_0155279 = alloca i32 1"   --->   Operation 44 'alloca' 'p_0_0_0155279' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%p_0_0_0153281 = alloca i32 1"   --->   Operation 45 'alloca' 'p_0_0_0153281' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%p_0_0_0156278 = alloca i32 1"   --->   Operation 46 'alloca' 'p_0_0_0156278' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%p_0_0_0154280 = alloca i32 1"   --->   Operation 47 'alloca' 'p_0_0_0154280' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%p_0_0_0152282 = alloca i32 1"   --->   Operation 48 'alloca' 'p_0_0_0152282' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%add_ln84_read = read i22 @_ssdm_op_Read.ap_auto.i22, i22 %add_ln84"   --->   Operation 49 'read' 'add_ln84_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%tmp_3 = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %empty"   --->   Operation 50 'read' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%width_read = read i11 @_ssdm_op_Read.ap_auto.i11, i11 %width"   --->   Operation 51 'read' 'width_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%total_read = read i22 @_ssdm_op_Read.ap_auto.i22, i22 %total"   --->   Operation 52 'read' 'total_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%width_cast = zext i11 %width_read"   --->   Operation 53 'zext' 'width_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i8 %out_stream_V_data_V, i1 %out_stream_V_keep_V, i1 %out_stream_V_strb_V, i1 %out_stream_V_user_V, i1 %out_stream_V_last_V, i1 %out_stream_V_id_V, i1 %out_stream_V_dest_V, void @empty_7"   --->   Operation 54 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i8 %in_stream_V_data_V, i1 %in_stream_V_keep_V, i1 %in_stream_V_strb_V, i1 %in_stream_V_user_V, i1 %in_stream_V_last_V, i1 %in_stream_V_id_V, i1 %in_stream_V_dest_V, void @empty_8"   --->   Operation 55 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %linebuf1, i64 666, i64 18, i64 18446744073709551615, i1 0"   --->   Operation 56 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %linebuf0, i64 666, i64 18, i64 18446744073709551615, i1 0"   --->   Operation 57 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %in_stream_V_data_V, i1 %in_stream_V_keep_V, i1 %in_stream_V_strb_V, i1 %in_stream_V_user_V, i1 %in_stream_V_last_V, i1 %in_stream_V_id_V, i1 %in_stream_V_dest_V, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %out_stream_V_data_V, i1 %out_stream_V_keep_V, i1 %out_stream_V_strb_V, i1 %out_stream_V_user_V, i1 %out_stream_V_last_V, i1 %out_stream_V_id_V, i1 %out_stream_V_dest_V, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 0, i8 %p_0_0_0152282"   --->   Operation 60 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 61 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 0, i8 %p_0_0_0154280"   --->   Operation 61 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 62 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 0, i8 %p_0_0_0156278"   --->   Operation 62 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 63 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 0, i8 %p_0_0_0153281"   --->   Operation 63 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 64 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 0, i8 %p_0_0_0155279"   --->   Operation 64 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 65 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 0, i8 %p_0_0_0157277"   --->   Operation 65 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 66 [1/1] (1.58ns)   --->   "%store_ln47 = store i22 0, i22 %idx" [../src/sobel_core.cpp:47]   --->   Operation 66 'store' 'store_ln47' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 67 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 0, i8 %reuse_reg"   --->   Operation 67 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 68 [1/1] (1.58ns)   --->   "%store_ln0 = store i64 18446744073709551615, i64 %reuse_addr_reg"   --->   Operation 68 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 69 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 0, i8 %reuse_reg51"   --->   Operation 69 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 70 [1/1] (1.58ns)   --->   "%store_ln0 = store i64 18446744073709551615, i64 %reuse_addr_reg52"   --->   Operation 70 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%br_ln47 = br void %for.body33" [../src/sobel_core.cpp:47]   --->   Operation 71 'br' 'br_ln47' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%idx_1 = load i22 %idx" [../src/sobel_core.cpp:47]   --->   Operation 72 'load' 'idx_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (2.25ns)   --->   "%icmp_ln47 = icmp_ult  i22 %idx_1, i22 %total_read" [../src/sobel_core.cpp:47]   --->   Operation 73 'icmp' 'icmp_ln47' <Predicate = true> <Delay = 2.25> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.25> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 74 [1/1] (2.25ns)   --->   "%idx_2 = add i22 %idx_1, i22 1" [../src/sobel_core.cpp:47]   --->   Operation 74 'add' 'idx_2' <Predicate = true> <Delay = 2.25> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.25> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%br_ln47 = br i1 %icmp_ln47, void %return.loopexit.exitStub, void %for.body33.split_ifconv" [../src/sobel_core.cpp:47]   --->   Operation 75 'br' 'br_ln47' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (1.58ns)   --->   "%store_ln47 = store i22 %idx_2, i22 %idx" [../src/sobel_core.cpp:47]   --->   Operation 76 'store' 'store_ln47' <Predicate = (icmp_ln47)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 4.04>
+ST_2 : Operation 77 [26/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 77 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "%p2y = bitconcatenate i12 @_ssdm_op_BitConcatenate.i12.i11.i1, i11 %tmp_3, i1 0" [../src/sobel_core.cpp:61]   --->   Operation 78 'bitconcatenate' 'p2y' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "%zext_ln61 = zext i12 %p2y" [../src/sobel_core.cpp:61]   --->   Operation 79 'zext' 'zext_ln61' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (2.25ns)   --->   "%icmp_ln61 = icmp_ult  i22 %idx_1, i22 %zext_ln61" [../src/sobel_core.cpp:61]   --->   Operation 80 'icmp' 'icmp_ln61' <Predicate = (icmp_ln47)> <Delay = 2.25> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.25> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 81 [1/1] (2.25ns)   --->   "%icmp_ln81 = icmp_eq  i22 %idx_1, i22 0" [../src/sobel_core.cpp:81]   --->   Operation 81 'icmp' 'icmp_ln81' <Predicate = (icmp_ln47)> <Delay = 2.25> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.25> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 82 [1/1] (2.25ns)   --->   "%icmp_ln84 = icmp_eq  i22 %idx_1, i22 %add_ln84_read" [../src/sobel_core.cpp:84]   --->   Operation 82 'icmp' 'icmp_ln84' <Predicate = (icmp_ln47)> <Delay = 2.25> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.25> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 4.04>
+ST_3 : Operation 83 [25/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 83 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 4.04>
+ST_4 : Operation 84 [24/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 84 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 4.04>
+ST_5 : Operation 85 [23/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 85 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 4.04>
+ST_6 : Operation 86 [22/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 86 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 4.04>
+ST_7 : Operation 87 [21/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 87 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 4.04>
+ST_8 : Operation 88 [20/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 88 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 4.04>
+ST_9 : Operation 89 [19/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 89 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 4.04>
+ST_10 : Operation 90 [18/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 90 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 4.04>
+ST_11 : Operation 91 [17/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 91 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 4.04>
+ST_12 : Operation 92 [16/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 92 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 4.04>
+ST_13 : Operation 93 [15/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 93 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 4.04>
+ST_14 : Operation 94 [14/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 94 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 4.04>
+ST_15 : Operation 95 [13/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 95 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 4.04>
+ST_16 : Operation 96 [12/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 96 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 4.04>
+ST_17 : Operation 97 [11/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 97 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 4.04>
+ST_18 : Operation 98 [10/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 98 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 4.04>
+ST_19 : Operation 99 [9/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 99 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 4.04>
+ST_20 : Operation 100 [8/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 100 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 4.04>
+ST_21 : Operation 101 [7/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 101 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 4.04>
+ST_22 : Operation 102 [6/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 102 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 4.04>
+ST_23 : Operation 103 [5/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 103 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 4.04>
+ST_24 : Operation 104 [4/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 104 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 4.04>
+ST_25 : Operation 105 [3/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 105 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 4.04>
+ST_26 : Operation 106 [2/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 106 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 4.04>
+ST_27 : Operation 107 [1/26] (4.04ns)   --->   "%col = urem i22 %idx_1, i22 %width_cast" [../src/sobel_core.cpp:51]   --->   Operation 107 'urem' 'col' <Predicate = (icmp_ln47)> <Delay = 4.04> <CoreInst = "Divider">   --->   Core 6 'Divider' <Latency = 25> <II = 1> <Delay = 4.04> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 108 [1/1] (0.00ns)   --->   "%tmp_4 = partselect i11 @_ssdm_op_PartSelect.i11.i22.i32.i32, i22 %col, i32 1, i32 11" [../src/sobel_core.cpp:61]   --->   Operation 108 'partselect' 'tmp_4' <Predicate = (icmp_ln47)> <Delay = 0.00>
+
+State 28 <SV = 27> <Delay = 2.63>
+ST_28 : Operation 109 [1/1] ( I:0.51ns O:0.51ns )   --->   "%empty_19 = read i14 @_ssdm_op_Read.axis.volatile.i8P0A.i1P0A.i1P0A.i1P0A.i1P0A.i1P0A.i1P0A, i8 %in_stream_V_data_V, i1 %in_stream_V_keep_V, i1 %in_stream_V_strb_V, i1 %in_stream_V_user_V, i1 %in_stream_V_last_V, i1 %in_stream_V_id_V, i1 %in_stream_V_dest_V" [../src/sobel_core.cpp:53]   --->   Operation 109 'read' 'empty_19' <Predicate = (icmp_ln47)> <Delay = 0.51> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.22> <Adapter> <Opcode : 'read' 'write'>
+ST_28 : Operation 110 [1/1] (0.00ns)   --->   "%in_pkt_data = extractvalue i14 %empty_19" [../src/sobel_core.cpp:53]   --->   Operation 110 'extractvalue' 'in_pkt_data' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_28 : Operation 111 [1/1] (0.00ns)   --->   "%zext_ln19 = zext i22 %col" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 111 'zext' 'zext_ln19' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_28 : Operation 112 [1/1] (0.00ns)   --->   "%linebuf0_addr = getelementptr i8 %linebuf0, i64 0, i64 %zext_ln19" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 112 'getelementptr' 'linebuf0_addr' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_28 : Operation 113 [1/1] (0.00ns)   --->   "%reuse_addr_reg52_load = load i64 %reuse_addr_reg52"   --->   Operation 113 'load' 'reuse_addr_reg52_load' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_28 : Operation 114 [2/2] (2.63ns)   --->   "%addr_cmp55 = icmp_eq  i64 %reuse_addr_reg52_load, i64 %zext_ln19" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 114 'icmp' 'addr_cmp55' <Predicate = (icmp_ln47)> <Delay = 2.63> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 1> <II = 1> <Delay = 2.63> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 115 [1/1] (0.00ns)   --->   "%linebuf1_addr = getelementptr i8 %linebuf1, i64 0, i64 %zext_ln19" [../src/window_generator.cpp:20->../src/sobel_core.cpp:56]   --->   Operation 115 'getelementptr' 'linebuf1_addr' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_28 : Operation 116 [1/1] (0.00ns)   --->   "%reuse_addr_reg_load = load i64 %reuse_addr_reg"   --->   Operation 116 'load' 'reuse_addr_reg_load' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_28 : Operation 117 [3/3] (1.68ns)   --->   "%linebuf1_load = load i11 %linebuf1_addr" [../src/window_generator.cpp:20->../src/sobel_core.cpp:56]   --->   Operation 117 'load' 'linebuf1_load' <Predicate = (icmp_ln47)> <Delay = 1.68> <CoreInst = "RAM_1P_BRAM">   --->   Core 87 'RAM_1P_BRAM' <Latency = 2> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 1920> <RAM>
+ST_28 : Operation 118 [2/2] (2.63ns)   --->   "%addr_cmp = icmp_eq  i64 %reuse_addr_reg_load, i64 %zext_ln19" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 118 'icmp' 'addr_cmp' <Predicate = (icmp_ln47)> <Delay = 2.63> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 1> <II = 1> <Delay = 2.63> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 119 [1/1] (1.58ns)   --->   "%store_ln19 = store i64 %zext_ln19, i64 %reuse_addr_reg52" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 119 'store' 'store_ln19' <Predicate = (icmp_ln47)> <Delay = 1.58>
+ST_28 : Operation 120 [1/1] ( I:1.68ns O:1.68ns )   --->   "%store_ln25 = store i8 %in_pkt_data, i11 %linebuf1_addr" [../src/window_generator.cpp:25->../src/sobel_core.cpp:56]   --->   Operation 120 'store' 'store_ln25' <Predicate = (icmp_ln47)> <Delay = 1.68> <CoreInst = "RAM_1P_BRAM">   --->   Core 87 'RAM_1P_BRAM' <Latency = 2> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 1920> <RAM>
+ST_28 : Operation 121 [1/1] (1.58ns)   --->   "%store_ln19 = store i64 %zext_ln19, i64 %reuse_addr_reg" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 121 'store' 'store_ln19' <Predicate = (icmp_ln47)> <Delay = 1.58>
+ST_28 : Operation 122 [1/1] (1.63ns)   --->   "%icmp_ln61_1 = icmp_sgt  i11 %tmp_4, i11 0" [../src/sobel_core.cpp:61]   --->   Operation 122 'icmp' 'icmp_ln61_1' <Predicate = (icmp_ln47)> <Delay = 1.63> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 2.63>
+ST_29 : Operation 123 [1/2] (2.63ns)   --->   "%addr_cmp55 = icmp_eq  i64 %reuse_addr_reg52_load, i64 %zext_ln19" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 123 'icmp' 'addr_cmp55' <Predicate = (icmp_ln47)> <Delay = 2.63> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 1> <II = 1> <Delay = 2.63> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 124 [2/3] (1.68ns)   --->   "%linebuf1_load = load i11 %linebuf1_addr" [../src/window_generator.cpp:20->../src/sobel_core.cpp:56]   --->   Operation 124 'load' 'linebuf1_load' <Predicate = (icmp_ln47)> <Delay = 1.68> <CoreInst = "RAM_1P_BRAM">   --->   Core 87 'RAM_1P_BRAM' <Latency = 2> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 1920> <RAM>
+ST_29 : Operation 125 [1/2] (2.63ns)   --->   "%addr_cmp = icmp_eq  i64 %reuse_addr_reg_load, i64 %zext_ln19" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 125 'icmp' 'addr_cmp' <Predicate = (icmp_ln47)> <Delay = 2.63> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 1> <II = 1> <Delay = 2.63> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 4.61>
+ST_30 : Operation 126 [3/3] (1.68ns)   --->   "%linebuf0_load = load i11 %linebuf0_addr" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 126 'load' 'linebuf0_load' <Predicate = (icmp_ln47 & !addr_cmp55)> <Delay = 1.68> <CoreInst = "RAM_1P_BRAM">   --->   Core 87 'RAM_1P_BRAM' <Latency = 2> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 1920> <RAM>
+ST_30 : Operation 127 [1/1] (0.00ns)   --->   "%reuse_reg_load = load i8 %reuse_reg"   --->   Operation 127 'load' 'reuse_reg_load' <Predicate = (icmp_ln47 & addr_cmp)> <Delay = 0.00>
+ST_30 : Operation 128 [1/3] ( I:1.68ns O:1.68ns )   --->   "%linebuf1_load = load i11 %linebuf1_addr" [../src/window_generator.cpp:20->../src/sobel_core.cpp:56]   --->   Operation 128 'load' 'linebuf1_load' <Predicate = (icmp_ln47)> <Delay = 1.68> <CoreInst = "RAM_1P_BRAM">   --->   Core 87 'RAM_1P_BRAM' <Latency = 2> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 1920> <RAM>
+ST_30 : Operation 129 [1/1] (1.24ns)   --->   "%reuse_select = select i1 %addr_cmp, i8 %reuse_reg_load, i8 %linebuf1_load" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 129 'select' 'reuse_select' <Predicate = (icmp_ln47)> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_30 : Operation 130 [1/1] ( I:1.68ns O:1.68ns )   --->   "%store_ln24 = store i8 %reuse_select, i11 %linebuf0_addr" [../src/window_generator.cpp:24->../src/sobel_core.cpp:56]   --->   Operation 130 'store' 'store_ln24' <Predicate = (icmp_ln47)> <Delay = 1.68> <CoreInst = "RAM_1P_BRAM">   --->   Core 87 'RAM_1P_BRAM' <Latency = 2> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 1920> <RAM>
+ST_30 : Operation 131 [1/1] (1.58ns)   --->   "%store_ln53 = store i8 %in_pkt_data, i8 %reuse_reg" [../src/sobel_core.cpp:53]   --->   Operation 131 'store' 'store_ln53' <Predicate = (icmp_ln47)> <Delay = 1.58>
+
+State 31 <SV = 30> <Delay = 0.00>
+ST_31 : Operation 132 [2/3] (1.68ns)   --->   "%linebuf0_load = load i11 %linebuf0_addr" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 132 'load' 'linebuf0_load' <Predicate = (icmp_ln47 & !addr_cmp55)> <Delay = 1.68> <CoreInst = "RAM_1P_BRAM">   --->   Core 87 'RAM_1P_BRAM' <Latency = 2> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 1920> <RAM>
+
+State 32 <SV = 31> <Delay = 4.51>
+ST_32 : Operation 133 [1/1] (0.00ns)   --->   "%p_0_0_0156278_load = load i8 %p_0_0_0156278"   --->   Operation 133 'load' 'p_0_0_0156278_load' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 134 [1/1] (0.00ns)   --->   "%p_0_0_0154280_load = load i8 %p_0_0_0154280"   --->   Operation 134 'load' 'p_0_0_0154280_load' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 135 [1/1] (0.00ns)   --->   "%p_0_0_0152282_load = load i8 %p_0_0_0152282"   --->   Operation 135 'load' 'p_0_0_0152282_load' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 136 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 18446744073709551615, i64 0"   --->   Operation 136 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 137 [1/1] (0.00ns)   --->   "%p_0_0_0157277_load = load i8 %p_0_0_0157277" [../src/sobel_core.cpp:63]   --->   Operation 137 'load' 'p_0_0_0157277_load' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_32 : Operation 138 [1/1] (0.00ns)   --->   "%p_0_0_0155279_load = load i8 %p_0_0_0155279"   --->   Operation 138 'load' 'p_0_0_0155279_load' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_32 : Operation 139 [1/1] (0.00ns)   --->   "%p_0_0_0153281_load = load i8 %p_0_0_0153281" [../src/sobel_core.cpp:65]   --->   Operation 139 'load' 'p_0_0_0153281_load' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_32 : Operation 140 [1/1] (0.00ns)   --->   "%reuse_reg51_load = load i8 %reuse_reg51"   --->   Operation 140 'load' 'reuse_reg51_load' <Predicate = (icmp_ln47 & addr_cmp55)> <Delay = 0.00>
+ST_32 : Operation 141 [1/3] ( I:1.68ns O:1.68ns )   --->   "%linebuf0_load = load i11 %linebuf0_addr" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 141 'load' 'linebuf0_load' <Predicate = (icmp_ln47 & !addr_cmp55)> <Delay = 1.68> <CoreInst = "RAM_1P_BRAM">   --->   Core 87 'RAM_1P_BRAM' <Latency = 2> <II = 1> <Delay = 1.68> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 1920> <RAM>
+ST_32 : Operation 142 [1/1] (1.24ns)   --->   "%reuse_select56 = select i1 %addr_cmp55, i8 %reuse_reg51_load, i8 %linebuf0_load" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 142 'select' 'reuse_select56' <Predicate = (icmp_ln47)> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_32 : Operation 143 [1/1] (1.58ns)   --->   "%store_ln19 = store i8 %reuse_select, i8 %reuse_reg51" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 143 'store' 'store_ln19' <Predicate = (icmp_ln47)> <Delay = 1.58>
+ST_32 : Operation 144 [1/1] (0.00ns)   --->   "%zext_ln63 = zext i8 %p_0_0_0157277_load" [../src/sobel_core.cpp:63]   --->   Operation 144 'zext' 'zext_ln63' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_32 : Operation 145 [1/1] (0.00ns)   --->   "%p_0_0_0155279_cast = zext i8 %p_0_0_0155279_load"   --->   Operation 145 'zext' 'p_0_0_0155279_cast' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_32 : Operation 146 [1/1] (0.00ns)   --->   "%zext_ln65 = zext i8 %reuse_select" [../src/sobel_core.cpp:65]   --->   Operation 146 'zext' 'zext_ln65' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_32 : Operation 147 [1/1] (0.00ns)   --->   "%zext_ln65_1 = zext i8 %p_0_0_0153281_load" [../src/sobel_core.cpp:65]   --->   Operation 147 'zext' 'zext_ln65_1' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_32 : Operation 148 [1/1] (1.91ns)   --->   "%tmp = sub i9 %zext_ln65, i9 %p_0_0_0155279_cast" [../src/sobel_core.cpp:65]   --->   Operation 148 'sub' 'tmp' <Predicate = (icmp_ln47)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 149 [1/1] (1.91ns)   --->   "%add_ln64 = add i9 %zext_ln63, i9 %zext_ln65_1" [../src/sobel_core.cpp:64]   --->   Operation 149 'add' 'add_ln64' <Predicate = (icmp_ln47)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 150 [1/1] (0.00ns)   --->   "%p_0_0_0156278_cast = zext i8 %p_0_0_0156278_load"   --->   Operation 150 'zext' 'p_0_0_0156278_cast' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_32 : Operation 151 [1/1] (0.00ns)   --->   "%p_0_0_0152282_cast = zext i8 %p_0_0_0152282_load"   --->   Operation 151 'zext' 'p_0_0_0152282_cast' <Predicate = (icmp_ln47)> <Delay = 0.00>
+ST_32 : Operation 152 [1/1] (1.91ns)   --->   "%tmp3 = sub i9 %p_0_0_0152282_cast, i9 %p_0_0_0156278_cast"   --->   Operation 152 'sub' 'tmp3' <Predicate = (icmp_ln47)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 153 [1/1] (1.91ns)   --->   "%sub_ln68 = sub i9 %zext_ln65_1, i9 %zext_ln63" [../src/sobel_core.cpp:68]   --->   Operation 153 'sub' 'sub_ln68' <Predicate = (icmp_ln47)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 154 [1/1] (1.58ns)   --->   "%store_ln53 = store i8 %in_pkt_data, i8 %p_0_0_0152282" [../src/sobel_core.cpp:53]   --->   Operation 154 'store' 'store_ln53' <Predicate = (icmp_ln47)> <Delay = 1.58>
+ST_32 : Operation 155 [1/1] (1.58ns)   --->   "%store_ln19 = store i8 %reuse_select, i8 %p_0_0_0154280" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 155 'store' 'store_ln19' <Predicate = (icmp_ln47)> <Delay = 1.58>
+ST_32 : Operation 156 [1/1] (1.58ns)   --->   "%store_ln19 = store i8 %reuse_select56, i8 %p_0_0_0156278" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 156 'store' 'store_ln19' <Predicate = (icmp_ln47)> <Delay = 1.58>
+ST_32 : Operation 157 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 %p_0_0_0152282_load, i8 %p_0_0_0153281"   --->   Operation 157 'store' 'store_ln0' <Predicate = (icmp_ln47)> <Delay = 1.58>
+ST_32 : Operation 158 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 %p_0_0_0154280_load, i8 %p_0_0_0155279"   --->   Operation 158 'store' 'store_ln0' <Predicate = (icmp_ln47)> <Delay = 1.58>
+ST_32 : Operation 159 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 %p_0_0_0156278_load, i8 %p_0_0_0157277"   --->   Operation 159 'store' 'store_ln0' <Predicate = (icmp_ln47)> <Delay = 1.58>
+
+State 33 <SV = 32> <Delay = 5.00>
+ST_33 : Operation 160 [1/1] (0.00ns)   --->   "%linebuf0_load_cast = zext i8 %reuse_select56" [../src/window_generator.cpp:19->../src/sobel_core.cpp:56]   --->   Operation 160 'zext' 'linebuf0_load_cast' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 161 [1/1] (0.00ns)   --->   "%in_pkt_data_cast1 = zext i8 %in_pkt_data" [../src/sobel_core.cpp:53]   --->   Operation 161 'zext' 'in_pkt_data_cast1' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 162 [1/1] (0.00ns)   --->   "%in_pkt_data_cast = zext i8 %in_pkt_data" [../src/sobel_core.cpp:53]   --->   Operation 162 'zext' 'in_pkt_data_cast' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 163 [1/1] (0.00ns)   --->   "%tmp_1 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i9.i1, i9 %tmp, i1 0" [../src/sobel_core.cpp:65]   --->   Operation 163 'bitconcatenate' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 164 [1/1] (0.00ns)   --->   "%sext_ln64 = sext i10 %tmp_1" [../src/sobel_core.cpp:64]   --->   Operation 164 'sext' 'sext_ln64' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 165 [1/1] (0.00ns)   --->   "%zext_ln64 = zext i9 %add_ln64" [../src/sobel_core.cpp:64]   --->   Operation 165 'zext' 'zext_ln64' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 166 [1/1] (1.82ns)   --->   "%sub_ln64 = sub i10 %in_pkt_data_cast, i10 %zext_ln64" [../src/sobel_core.cpp:64]   --->   Operation 166 'sub' 'sub_ln64' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 167 [1/1] (0.00ns)   --->   "%sext_ln65 = sext i10 %sub_ln64" [../src/sobel_core.cpp:65]   --->   Operation 167 'sext' 'sext_ln65' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 168 [1/1] (1.73ns)   --->   "%add_ln65 = add i11 %sext_ln64, i11 %linebuf0_load_cast" [../src/sobel_core.cpp:65]   --->   Operation 168 'add' 'add_ln65' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 169 [1/1] (1.63ns)   --->   "%gx = add i11 %add_ln65, i11 %sext_ln65" [../src/sobel_core.cpp:65]   --->   Operation 169 'add' 'gx' <Predicate = true> <Delay = 1.63> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 170 [1/1] (0.00ns)   --->   "%sext_ln62 = sext i11 %gx" [../src/sobel_core.cpp:62]   --->   Operation 170 'sext' 'sext_ln62' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 171 [1/1] (0.00ns)   --->   "%trunc_ln62 = trunc i11 %gx" [../src/sobel_core.cpp:62]   --->   Operation 171 'trunc' 'trunc_ln62' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 172 [1/1] (0.00ns)   --->   "%tmp_2 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i9.i1, i9 %tmp3, i1 0"   --->   Operation 172 'bitconcatenate' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 173 [1/1] (0.00ns)   --->   "%sext_ln68 = sext i10 %tmp_2" [../src/sobel_core.cpp:68]   --->   Operation 173 'sext' 'sext_ln68' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 174 [1/1] (0.00ns)   --->   "%sext_ln69 = sext i9 %sub_ln68" [../src/sobel_core.cpp:69]   --->   Operation 174 'sext' 'sext_ln69' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 175 [1/1] (1.73ns)   --->   "%add_ln69 = add i11 %sext_ln68, i11 %in_pkt_data_cast1" [../src/sobel_core.cpp:69]   --->   Operation 175 'add' 'add_ln69' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 176 [1/1] (1.63ns)   --->   "%add_ln69_1 = add i11 %add_ln69, i11 %sext_ln69" [../src/sobel_core.cpp:69]   --->   Operation 176 'add' 'add_ln69_1' <Predicate = true> <Delay = 1.63> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 177 [1/1] (1.63ns)   --->   "%gy = sub i11 %add_ln69_1, i11 %linebuf0_load_cast" [../src/sobel_core.cpp:69]   --->   Operation 177 'sub' 'gy' <Predicate = true> <Delay = 1.63> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 178 [1/1] (0.00ns)   --->   "%sext_ln67 = sext i11 %gy" [../src/sobel_core.cpp:67]   --->   Operation 178 'sext' 'sext_ln67' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 179 [1/1] (0.00ns)   --->   "%trunc_ln67 = trunc i11 %gy" [../src/sobel_core.cpp:67]   --->   Operation 179 'trunc' 'trunc_ln67' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 180 [1/1] (0.00ns)   --->   "%tmp_5 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %sext_ln62, i32 31" [../src/sobel_core.cpp:12->../src/sobel_core.cpp:71]   --->   Operation 180 'bitselect' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 181 [1/1] (0.00ns)   --->   "%tmp_6 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %sext_ln67, i32 31" [../src/sobel_core.cpp:12->../src/sobel_core.cpp:71]   --->   Operation 181 'bitselect' 'tmp_6' <Predicate = true> <Delay = 0.00>
+
+State 34 <SV = 33> <Delay = 4.14>
+ST_34 : Operation 182 [1/1] (1.73ns)   --->   "%sub_ln12 = sub i10 0, i10 %trunc_ln62" [../src/sobel_core.cpp:12->../src/sobel_core.cpp:71]   --->   Operation 182 'sub' 'sub_ln12' <Predicate = (tmp_5)> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 183 [1/1] (0.68ns)   --->   "%select_ln12 = select i1 %tmp_5, i10 %sub_ln12, i10 %trunc_ln62" [../src/sobel_core.cpp:12->../src/sobel_core.cpp:71]   --->   Operation 183 'select' 'select_ln12' <Predicate = true> <Delay = 0.68> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_34 : Operation 184 [1/1] (0.00ns)   --->   "%zext_ln10 = zext i10 %select_ln12" [../src/sobel_core.cpp:10->../src/sobel_core.cpp:71]   --->   Operation 184 'zext' 'zext_ln10' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 185 [1/1] (1.73ns)   --->   "%sub_ln12_1 = sub i10 0, i10 %trunc_ln67" [../src/sobel_core.cpp:12->../src/sobel_core.cpp:71]   --->   Operation 185 'sub' 'sub_ln12_1' <Predicate = (tmp_6)> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 186 [1/1] (0.68ns)   --->   "%select_ln12_1 = select i1 %tmp_6, i10 %sub_ln12_1, i10 %trunc_ln67" [../src/sobel_core.cpp:12->../src/sobel_core.cpp:71]   --->   Operation 186 'select' 'select_ln12_1' <Predicate = true> <Delay = 0.68> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_34 : Operation 187 [1/1] (0.00ns)   --->   "%zext_ln71 = zext i10 %select_ln12_1" [../src/sobel_core.cpp:71]   --->   Operation 187 'zext' 'zext_ln71' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 188 [1/1] (1.73ns)   --->   "%mag = add i11 %zext_ln10, i11 %zext_ln71" [../src/sobel_core.cpp:71]   --->   Operation 188 'add' 'mag' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 189 [1/1] (0.00ns)   --->   "%tmp_7 = partselect i3 @_ssdm_op_PartSelect.i3.i11.i32.i32, i11 %mag, i32 8, i32 10" [../src/sobel_core.cpp:6->../src/sobel_core.cpp:72]   --->   Operation 189 'partselect' 'tmp_7' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 201 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 201 'ret' 'ret_ln0' <Predicate = (!icmp_ln47)> <Delay = 1.58>
+
+State 35 <SV = 34> <Delay = 4.43>
+ST_35 : Operation 190 [1/1] (0.00ns)   --->   "%specpipeline_ln48 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_1" [../src/sobel_core.cpp:48]   --->   Operation 190 'specpipeline' 'specpipeline_ln48' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 191 [1/1] (0.00ns)   --->   "%specloopname_ln47 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10" [../src/sobel_core.cpp:47]   --->   Operation 191 'specloopname' 'specloopname_ln47' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 192 [1/1] (0.00ns) (grouped into LUT with out node out_pix_1)   --->   "%xor_ln61 = xor i1 %icmp_ln61, i1 1" [../src/sobel_core.cpp:61]   --->   Operation 192 'xor' 'xor_ln61' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 193 [1/1] (0.00ns) (grouped into LUT with out node out_pix_1)   --->   "%and_ln61 = and i1 %xor_ln61, i1 %icmp_ln61_1" [../src/sobel_core.cpp:61]   --->   Operation 193 'and' 'and_ln61' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 194 [1/1] (1.73ns)   --->   "%add_ln71 = add i10 %select_ln12, i10 %select_ln12_1" [../src/sobel_core.cpp:71]   --->   Operation 194 'add' 'add_ln71' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 195 [1/1] (1.65ns)   --->   "%icmp_ln6 = icmp_ne  i3 %tmp_7, i3 0" [../src/sobel_core.cpp:6->../src/sobel_core.cpp:72]   --->   Operation 195 'icmp' 'icmp_ln6' <Predicate = true> <Delay = 1.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 196 [1/1] (0.00ns) (grouped into LUT with out node out_pix_1)   --->   "%trunc_ln7 = trunc i10 %add_ln71" [../src/sobel_core.cpp:7->../src/sobel_core.cpp:72]   --->   Operation 196 'trunc' 'trunc_ln7' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 197 [1/1] (0.00ns) (grouped into LUT with out node out_pix_1)   --->   "%out_pix = select i1 %icmp_ln6, i8 255, i8 %trunc_ln7" [../src/sobel_core.cpp:7->../src/sobel_core.cpp:72]   --->   Operation 197 'select' 'out_pix' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_35 : Operation 198 [1/1] (1.24ns) (out node of the LUT)   --->   "%out_pix_1 = select i1 %and_ln61, i8 %out_pix, i8 0" [../src/sobel_core.cpp:61]   --->   Operation 198 'select' 'out_pix_1' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_35 : Operation 199 [1/1] ( I:1.46ns O:1.46ns )   --->   "%write_ln86 = write void @_ssdm_op_Write.axis.volatile.i8P0A.i1P0A.i1P0A.i1P0A.i1P0A.i1P0A.i1P0A, i8 %out_stream_V_data_V, i1 %out_stream_V_keep_V, i1 %out_stream_V_strb_V, i1 %out_stream_V_user_V, i1 %out_stream_V_last_V, i1 %out_stream_V_id_V, i1 %out_stream_V_dest_V, i8 %out_pix_1, i1 1, i1 1, i1 %icmp_ln81, i1 %icmp_ln84, i1 0, i1 0" [../src/sobel_core.cpp:86]   --->   Operation 199 'write' 'write_ln86' <Predicate = true> <Delay = 1.46> <CoreInst = "regslice">   --->   Core 135 'regslice' <Latency = 0> <II = 1> <Delay = 2.22> <Adapter> <Opcode : 'read' 'write'>
+ST_35 : Operation 200 [1/1] (0.00ns)   --->   "%br_ln47 = br void %for.body33" [../src/sobel_core.cpp:47]   --->   Operation 200 'br' 'br_ln47' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4.000ns, clock uncertainty: 1.080ns.
+
+ <State 1>: 5.431ns
+The critical path consists of the following:
+	'store' operation ('store_ln47', ../src/sobel_core.cpp:47) of constant 0 22 bit on local variable 'idx', ../src/sobel_core.cpp:47 [49]  (1.588 ns)
+	'load' operation 22 bit ('idx', ../src/sobel_core.cpp:47) on local variable 'idx', ../src/sobel_core.cpp:47 [56]  (0.000 ns)
+	'add' operation 22 bit ('idx', ../src/sobel_core.cpp:47) [62]  (2.255 ns)
+	'store' operation ('store_ln47', ../src/sobel_core.cpp:47) of variable 'idx', ../src/sobel_core.cpp:47 22 bit on local variable 'idx', ../src/sobel_core.cpp:47 [153]  (1.588 ns)
+
+ <State 2>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 3>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 4>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 5>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 6>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 7>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 8>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 9>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 10>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 11>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 12>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 13>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 14>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 15>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 16>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 17>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 18>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 19>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 20>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 21>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 22>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 23>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 24>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 25>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 26>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 27>: 4.043ns
+The critical path consists of the following:
+	'urem' operation 22 bit ('col', ../src/sobel_core.cpp:51) [70]  (4.043 ns)
+
+ <State 28>: 2.638ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('addr_cmp55', ../src/window_generator.cpp:19->../src/sobel_core.cpp:56) [78]  (2.638 ns)
+
+ <State 29>: 2.638ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('addr_cmp55', ../src/window_generator.cpp:19->../src/sobel_core.cpp:56) [78]  (2.638 ns)
+
+ <State 30>: 4.612ns
+The critical path consists of the following:
+	'load' operation 8 bit ('linebuf1_load', ../src/window_generator.cpp:20->../src/sobel_core.cpp:56) on array 'linebuf1' [83]  (1.682 ns)
+	'select' operation 8 bit ('reuse_select', ../src/window_generator.cpp:19->../src/sobel_core.cpp:56) [85]  (1.248 ns)
+	'store' operation ('store_ln24', ../src/window_generator.cpp:24->../src/sobel_core.cpp:56) of variable 'reuse_select', ../src/window_generator.cpp:19->../src/sobel_core.cpp:56 8 bit on array 'linebuf0' [86]  (1.682 ns)
+
+ <State 31>: 0.000ns
+The critical path consists of the following:
+
+ <State 32>: 4.518ns
+The critical path consists of the following:
+	'load' operation 8 bit ('linebuf0_load', ../src/window_generator.cpp:19->../src/sobel_core.cpp:56) on array 'linebuf0' [77]  (1.682 ns)
+	'select' operation 8 bit ('reuse_select56', ../src/window_generator.cpp:19->../src/sobel_core.cpp:56) [79]  (1.248 ns)
+	'store' operation ('store_ln19', ../src/window_generator.cpp:19->../src/sobel_core.cpp:56) of variable 'reuse_select56', ../src/window_generator.cpp:19->../src/sobel_core.cpp:56 8 bit on local variable 'p_0_0_0156278' [149]  (1.588 ns)
+
+ <State 33>: 5.009ns
+The critical path consists of the following:
+	'add' operation 11 bit ('add_ln69', ../src/sobel_core.cpp:69) [124]  (1.731 ns)
+	'add' operation 11 bit ('add_ln69_1', ../src/sobel_core.cpp:69) [125]  (1.639 ns)
+	'sub' operation 11 bit ('gy', ../src/sobel_core.cpp:69) [126]  (1.639 ns)
+
+ <State 34>: 4.149ns
+The critical path consists of the following:
+	'sub' operation 10 bit ('sub_ln12', ../src/sobel_core.cpp:12->../src/sobel_core.cpp:71) [130]  (1.731 ns)
+	'select' operation 10 bit ('select_ln12', ../src/sobel_core.cpp:12->../src/sobel_core.cpp:71) [131]  (0.687 ns)
+	'add' operation 11 bit ('mag', ../src/sobel_core.cpp:71) [138]  (1.731 ns)
+
+ <State 35>: 4.439ns
+The critical path consists of the following:
+	'add' operation 10 bit ('add_ln71', ../src/sobel_core.cpp:71) [137]  (1.731 ns)
+	'select' operation 8 bit ('out_pix', ../src/sobel_core.cpp:7->../src/sobel_core.cpp:72) [142]  (0.000 ns)
+	'select' operation 8 bit ('out_pix', ../src/sobel_core.cpp:61) [143]  (1.248 ns)
+	axis write operation ('write_ln86', ../src/sobel_core.cpp:86) on port 'out_stream_V_data_V' (../src/sobel_core.cpp:86) [146]  (1.460 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,31 @@
+
+
+set RtlHierarchyInfo {[
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84"},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.linebuf0_U"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.linebuf1_U"},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_31_1_fu_94"},
+	{"ID" : "5", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_31_1_fu_94.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101"},
+	{"ID" : "7", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101.urem_22ns_11ns_22_26_1_U4"},
+	{"ID" : "8", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101.icmp_64ns_64ns_1_2_1_U5"},
+	{"ID" : "9", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101.icmp_64ns_64ns_1_2_1_U6"},
+	{"ID" : "10", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101.flow_control_loop_pipe_sequential_init_U"},
+	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_sobel_core_fu_84.mul_32s_32s_32_5_1_U29"},
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.CTRL_s_axi_U"},
+	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_data_V_U"},
+	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_keep_V_U"},
+	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_strb_V_U"},
+	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_user_V_U"},
+	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_last_V_U"},
+	{"ID" : "18", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_id_V_U"},
+	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_stream_V_dest_V_U"},
+	{"ID" : "20", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_data_V_U"},
+	{"ID" : "21", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_keep_V_U"},
+	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_strb_V_U"},
+	{"ID" : "23", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_user_V_U"},
+	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_last_V_U"},
+	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_id_V_U"},
+	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_stream_V_dest_V_U"}]}
+set DependenceCheckSize 0

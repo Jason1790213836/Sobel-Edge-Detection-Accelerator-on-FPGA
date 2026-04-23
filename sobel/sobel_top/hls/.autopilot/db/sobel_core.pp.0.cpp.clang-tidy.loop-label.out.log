@@ -1,0 +1,40 @@
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:2390:5: remark: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_676_1: 
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:2390:5: note: FIX-IT applied suggested code changes
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:2404:5: remark: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_690_1: 
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:2404:5: note: FIX-IT applied suggested code changes
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:2418:5: remark: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_704_1: 
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:2418:5: note: FIX-IT applied suggested code changes
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:5938:7: remark: Added loop label VITIS_LOOP_1251_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^
+      VITIS_LOOP_1251_1: 
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:5938:7: note: FIX-IT applied suggested code changes
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:50069:5: remark: Added loop label VITIS_LOOP_31_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < width; i++) {
+    ^
+    VITIS_LOOP_31_1: 
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:50069:5: note: FIX-IT applied suggested code changes
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:50076:5: remark: Added loop label VITIS_LOOP_38_2:   [xilinx-label-all-loops]
+    for (int r = 0; r < 3; r++) {
+    ^
+    VITIS_LOOP_38_2: 
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:50076:5: note: FIX-IT applied suggested code changes
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:50077:9: remark: Added loop label VITIS_LOOP_39_3:   [xilinx-label-all-loops]
+        for (int c = 0; c < 3; c++) {
+        ^
+        VITIS_LOOP_39_3: 
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:50077:9: note: FIX-IT applied suggested code changes
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:50085:5: remark: Added loop label VITIS_LOOP_47_4:   [xilinx-label-all-loops]
+    for (int idx = 0; idx < total; idx++) {
+    ^
+    VITIS_LOOP_47_4: 
+C:\Users\57778\Desktop\sobel\sobel\sobel_top\hls\.autopilot\db\sobel_core.pp.0.cpp:50085:5: note: FIX-IT applied suggested code changes
