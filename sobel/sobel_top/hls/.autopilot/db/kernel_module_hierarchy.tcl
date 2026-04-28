@@ -3,10 +3,10 @@ set ModuleHierarchy {[{
 "SubInsts" : [
 	{"Name" : "grp_sobel_core_fu_84", "RefName" : "sobel_core","ID" : "1","Type" : "sequential",
 		"SubInsts" : [
-		{"Name" : "grp_sobel_core_Pipeline_VITIS_LOOP_31_1_fu_94", "RefName" : "sobel_core_Pipeline_VITIS_LOOP_31_1","ID" : "2","Type" : "sequential",
+		{"Name" : "grp_sobel_core_Pipeline_init_linebuf_fu_94", "RefName" : "sobel_core_Pipeline_init_linebuf","ID" : "2","Type" : "sequential",
 			"SubLoops" : [
-			{"Name" : "VITIS_LOOP_31_1","RefName" : "VITIS_LOOP_31_1","ID" : "3","Type" : "pipeline"},]},
-		{"Name" : "grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101", "RefName" : "sobel_core_Pipeline_VITIS_LOOP_47_4","ID" : "4","Type" : "sequential",
+			{"Name" : "init_linebuf","RefName" : "init_linebuf","ID" : "3","Type" : "pipeline"},]},
+		{"Name" : "grp_sobel_core_Pipeline_row_loop_col_loop_fu_101", "RefName" : "sobel_core_Pipeline_row_loop_col_loop","ID" : "4","Type" : "sequential",
 			"SubLoops" : [
-			{"Name" : "VITIS_LOOP_47_4","RefName" : "VITIS_LOOP_47_4","ID" : "5","Type" : "pipeline"},]},]},]
+			{"Name" : "row_loop_col_loop","RefName" : "row_loop_col_loop","ID" : "5","Type" : "pipeline"},]},]},]
 }]}

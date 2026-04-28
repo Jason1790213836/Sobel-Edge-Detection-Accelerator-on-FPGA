@@ -37,14 +37,14 @@ class sobel_top_reference_model extends uvm_component;
     covergroup svr_in_stream_cov;
         delay: coverpoint svr_in_stream_delay
         {
-            bins norm[2] = { [0 : 1] };
+            bins norm[257] = { [0 : 256] };
         }
     endgroup
     int svr_out_stream_delay;
     covergroup svr_out_stream_cov;
         delay: coverpoint svr_out_stream_delay
         {
-            bins norm[2] = { [0 : 1] };
+            bins norm[257] = { [0 : 256] };
         }
     endgroup
     

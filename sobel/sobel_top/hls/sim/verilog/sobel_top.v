@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="sobel_top_sobel_top,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=4.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=5.431125,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=3351,HLS_SYN_LUT=2670,HLS_VERSION=2025_2}" *)
+(* CORE_GENERATION_INFO="sobel_top_sobel_top,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=8.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=5.799000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=1197,HLS_SYN_LUT=1837,HLS_VERSION=2025_2}" *)
 
 (* DowngradeIPIdentifiedWarnings="yes" *)
 module sobel_top (
@@ -109,8 +109,9 @@ wire    ap_CS_fsm_state1;
 reg    ap_ready;
 wire   [31:0] width;
 wire   [31:0] height;
-reg   [31:0] height_read_reg_118;
-reg   [31:0] width_read_reg_123;
+reg   [31:0] height_read_reg_120;
+wire    ap_CS_fsm_state2;
+reg   [31:0] width_read_reg_125;
 wire    grp_sobel_core_fu_84_ap_start;
 wire    grp_sobel_core_fu_84_ap_done;
 wire    grp_sobel_core_fu_84_ap_idle;
@@ -126,7 +127,6 @@ wire   [0:0] grp_sobel_core_fu_84_out_stream_TLAST;
 wire   [0:0] grp_sobel_core_fu_84_out_stream_TID;
 wire   [0:0] grp_sobel_core_fu_84_out_stream_TDEST;
 reg    grp_sobel_core_fu_84_ap_start_reg;
-wire    ap_CS_fsm_state2;
 wire    ap_CS_fsm_state3;
 reg   [7:0] out_stream_TDATA_reg;
 reg   [0:0] out_stream_TKEEP_reg;
@@ -232,8 +232,8 @@ sobel_top_sobel_core grp_sobel_core_fu_84(
     .out_stream_TLAST(grp_sobel_core_fu_84_out_stream_TLAST),
     .out_stream_TID(grp_sobel_core_fu_84_out_stream_TID),
     .out_stream_TDEST(grp_sobel_core_fu_84_out_stream_TDEST),
-    .width(width_read_reg_123),
-    .height(height_read_reg_118)
+    .width(width_read_reg_125),
+    .height(height_read_reg_120)
 );
 
 sobel_top_CTRL_s_axi #(
@@ -486,9 +486,9 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state1)) begin
-        height_read_reg_118 <= height;
-        width_read_reg_123 <= width;
+    if ((1'b1 == ap_CS_fsm_state2)) begin
+        height_read_reg_120 <= height;
+        width_read_reg_125 <= width;
     end
 end
 

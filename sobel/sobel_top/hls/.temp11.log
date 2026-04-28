@@ -1,3 +1,0 @@
-Input image size: 1190 x 1190
-PASS: HLS output matches golden reference.
-INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1416100

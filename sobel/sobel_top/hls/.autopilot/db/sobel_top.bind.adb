@@ -773,7 +773,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.55</m_delay>
+				<m_delay>3.53</m_delay>
 				<m_topoIndex>3</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1065,8 +1065,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>5</mMinLatency>
-			<mMaxLatency>-1</mMaxLatency>
+			<mMinLatency>4</mMinLatency>
+			<mMaxLatency>3688337</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -1078,25 +1078,25 @@
 			<item class_id="26" tracking_level="1" version="0" object_id="_44">
 				<id>1</id>
 				<operations class_id="27" tracking_level="0" version="0">
-					<count>2</count>
+					<count>0</count>
 					<item_version>0</item_version>
-					<item class_id="28" tracking_level="1" version="0" object_id="_45">
+				</operations>
+			</item>
+			<item class_id_reference="26" object_id="_45">
+				<id>2</id>
+				<operations>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item class_id="28" tracking_level="1" version="0" object_id="_46">
 						<id>41</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_46">
+					<item class_id_reference="28" object_id="_47">
 						<id>42</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-				</operations>
-			</item>
-			<item class_id_reference="26" object_id="_47">
-				<id>2</id>
-				<operations>
-					<count>1</count>
-					<item_version>0</item_version>
 					<item class_id_reference="28" object_id="_48">
 						<id>43</id>
 						<stage>2</stage>
@@ -1316,14 +1316,14 @@
 		<item class_id="36" tracking_level="0" version="0">
 			<first>41</first>
 			<second class_id="37" tracking_level="0" version="0">
-				<first>0</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>42</first>
 			<second>
-				<first>0</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1435,7 +1435,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item>
-			<first>118</first>
+			<first>120</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1443,7 +1443,7 @@
 			</second>
 		</item>
 		<item>
-			<first>123</first>
+			<first>125</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1455,7 +1455,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item>
-			<first>height_read_reg_118</first>
+			<first>height_read_reg_120</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -1463,7 +1463,7 @@
 			</second>
 		</item>
 		<item>
-			<first>width_read_reg_123</first>
+			<first>width_read_reg_125</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -76,9 +76,9 @@ static bool write_pgm(const string &filename,
 
 int main() {
 
-    const string input_file = "C:/Users/57778/Desktop/sobel/images/input1.pgm";
-    const string output_file = "C:/Users/57778/Desktop/sobel/images/output1.pgm";
-    const string golden_file = "C:/Users/57778/Desktop/sobel/images/golden1.pgm";
+    const string input_file = "C:/Users/57778/Desktop/sobel/images/input.pgm";
+    const string output_file = "C:/Users/57778/Desktop/sobel/images/output.pgm";
+    const string golden_file = "C:/Users/57778/Desktop/sobel/images/golden.pgm";
 
     vector<unsigned char> input_img;
     vector<unsigned char> golden_img;

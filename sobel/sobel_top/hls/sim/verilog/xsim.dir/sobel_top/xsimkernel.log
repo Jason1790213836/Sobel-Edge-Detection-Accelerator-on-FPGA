@@ -1,7 +1,7 @@
-Running: xsim.dir/sobel_top/xsimk.exe -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=sobel_top_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb sobel_top.wdb -simrunnum 0 -socket 53465
+Running: xsim.dir/sobel_top/xsimk.exe -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=sobel_top_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb sobel_top.wdb -simrunnum 0 -socket 58804
 Design successfully loaded
-Design Loading Memory Usage: 20696 KB (Peak: 20696 KB)
-Design Loading CPU Usage: 139 ms
+Design Loading Memory Usage: 19696 KB (Peak: 19696 KB)
+Design Loading CPU Usage: 108 ms
 Simulation completed
-Simulation Memory Usage: 7547284 KB (Peak: 7547284 KB)
-Simulation CPU Usage: 441452 ms
+Simulation Memory Usage: 5112472 KB (Peak: 5112472 KB)
+Simulation CPU Usage: 262858 ms

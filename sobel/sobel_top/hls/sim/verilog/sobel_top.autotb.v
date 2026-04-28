@@ -15,7 +15,7 @@
 `define AUTOTB_PER_RESULT_TRANS_FILE "sobel_top.performance.result.transaction.xml"
 `define AUTOTB_TOP_INST AESL_inst_apatb_sobel_top_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
-`define AUTOTB_CLOCK_PERIOD_DIV2 2.00
+`define AUTOTB_CLOCK_PERIOD_DIV2 4.00
 
 `define AESL_DEPTH_in_stream_V_data_V 1
 `define AESL_DEPTH_in_stream_V_keep_V 1
@@ -69,22 +69,22 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = -1;
+parameter LATENCY_ESTIMATION = 3688337;
 parameter LENGTH_height = 1;
-parameter LENGTH_in_stream_V_data_V = 1416100;
-parameter LENGTH_in_stream_V_dest_V = 1416100;
-parameter LENGTH_in_stream_V_id_V = 1416100;
-parameter LENGTH_in_stream_V_keep_V = 1416100;
-parameter LENGTH_in_stream_V_last_V = 1416100;
-parameter LENGTH_in_stream_V_strb_V = 1416100;
-parameter LENGTH_in_stream_V_user_V = 1416100;
-parameter LENGTH_out_stream_V_data_V = 1416100;
-parameter LENGTH_out_stream_V_dest_V = 1416100;
-parameter LENGTH_out_stream_V_id_V = 1416100;
-parameter LENGTH_out_stream_V_keep_V = 1416100;
-parameter LENGTH_out_stream_V_last_V = 1416100;
-parameter LENGTH_out_stream_V_strb_V = 1416100;
-parameter LENGTH_out_stream_V_user_V = 1416100;
+parameter LENGTH_in_stream_V_data_V = 616224;
+parameter LENGTH_in_stream_V_dest_V = 616224;
+parameter LENGTH_in_stream_V_id_V = 616224;
+parameter LENGTH_in_stream_V_keep_V = 616224;
+parameter LENGTH_in_stream_V_last_V = 616224;
+parameter LENGTH_in_stream_V_strb_V = 616224;
+parameter LENGTH_in_stream_V_user_V = 616224;
+parameter LENGTH_out_stream_V_data_V = 616224;
+parameter LENGTH_out_stream_V_dest_V = 616224;
+parameter LENGTH_out_stream_V_id_V = 616224;
+parameter LENGTH_out_stream_V_keep_V = 616224;
+parameter LENGTH_out_stream_V_last_V = 616224;
+parameter LENGTH_out_stream_V_strb_V = 616224;
+parameter LENGTH_out_stream_V_user_V = 616224;
 parameter LENGTH_width = 1;
 
 reg AESL_clock;

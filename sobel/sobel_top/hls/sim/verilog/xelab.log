@@ -1,7 +1,7 @@
 Vivado Simulator v2025.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_sobel_top_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj sobel_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_21 -L floating_point_v7_0_26 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./axivip -i ./svtb -i ./file_agent -i ./sobel_top_subsystem -s sobel_top -debug all 
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_sobel_top_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj sobel_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_21 -L floating_point_v7_0_26 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./axivip -i ./svtb -i ./file_agent -i ./sobel_top_subsystem -s sobel_top 
 Multi-threading is on. Using 14 slave threads.
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
@@ -21,26 +21,20 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/
 INFO: [VRFC 10-311] analyzing module sobel_top_CTRL_s_axi
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sobel_top_flow_control_loop_pipe_sequential_init
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_icmp_64ns_64ns_1_2_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sobel_top_icmp_64ns_64ns_1_2_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_icmp_64ns_64ns_1_2_1_sub.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sobel_top_icmp_64ns_64ns_1_2_1_sub
-INFO: [VRFC 10-311] analyzing module sobel_top_icmp_64ns_64ns_1_2_1_sub_comb_adder
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_mul_32s_32s_32_5_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sobel_top_mul_32s_32s_32_5_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_mul_11ns_11ns_22_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_top_mul_11ns_11ns_22_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_regslice_both.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sobel_top_regslice_both
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_sobel_core.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sobel_top_sobel_core
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_sobel_core_linebuf0_RAM_1P_BRAM_2R1W.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sobel_top_sobel_core_linebuf0_RAM_1P_BRAM_2R1W
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_sobel_core_Pipeline_VITIS_LOOP_31_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sobel_top_sobel_core_Pipeline_VITIS_LOOP_31_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_sobel_core_Pipeline_VITIS_LOOP_47_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sobel_top_sobel_core_Pipeline_VITIS_LOOP_47_4
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_urem_22ns_11ns_22_26_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sobel_top_urem_22ns_11ns_22_26_1_divider
-INFO: [VRFC 10-311] analyzing module sobel_top_urem_22ns_11ns_22_26_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_sobel_core_linebuf0_RAM_2P_BRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_top_sobel_core_linebuf0_RAM_2P_BRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_sobel_core_linebuf1_RAM_2P_BRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_top_sobel_core_linebuf1_RAM_2P_BRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_sobel_core_Pipeline_init_linebuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_top_sobel_core_Pipeline_init_linebuf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/sobel_top_sobel_core_Pipeline_row_loop_col_loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_top_sobel_core_Pipeline_row_loop_col_loop
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/57778/Desktop/sobel/sobel/sobel_top/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
@@ -68,16 +62,11 @@ Compiling package xil_defaultlib.axi_pkg
 Compiling package xil_defaultlib.sobel_top_subsystem_pkg
 Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
 Compiling module xil_defaultlib.sobel_top_sobel_core_linebuf0_RA...
+Compiling module xil_defaultlib.sobel_top_sobel_core_linebuf1_RA...
 Compiling module xil_defaultlib.sobel_top_flow_control_loop_pipe...
-Compiling module xil_defaultlib.sobel_top_sobel_core_Pipeline_VI...
-Compiling module xil_defaultlib.sobel_top_urem_22ns_11ns_22_26_1...
-Compiling module xil_defaultlib.sobel_top_urem_22ns_11ns_22_26_1...
-Compiling module xil_defaultlib.sobel_top_icmp_64ns_64ns_1_2_1_s...
-Compiling module xil_defaultlib.sobel_top_icmp_64ns_64ns_1_2_1_s...
-Compiling module xil_defaultlib.sobel_top_icmp_64ns_64ns_1_2_1_s...
-Compiling module xil_defaultlib.sobel_top_icmp_64ns_64ns_1_2_1(I...
-Compiling module xil_defaultlib.sobel_top_sobel_core_Pipeline_VI...
-Compiling module xil_defaultlib.sobel_top_mul_32s_32s_32_5_1(NUM...
+Compiling module xil_defaultlib.sobel_top_sobel_core_Pipeline_in...
+Compiling module xil_defaultlib.sobel_top_sobel_core_Pipeline_ro...
+Compiling module xil_defaultlib.sobel_top_mul_11ns_11ns_22_1_1(N...
 Compiling module xil_defaultlib.sobel_top_sobel_core
 Compiling module xil_defaultlib.sobel_top_CTRL_s_axi
 Compiling module xil_defaultlib.sobel_top_regslice_both

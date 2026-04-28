@@ -30,28 +30,34 @@ C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:423:1:
 C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:440:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=write_nb_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS inline
 ^
-../src/sobel_core.cpp:4:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=clip_u8_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+../src/sobel_core.cpp:4:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=abs12_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INLINE
 ^
-../src/sobel_core.cpp:11:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=iabs_int_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+../src/sobel_core.cpp:9:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=clip_u8_12_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INLINE
 ^
-../src/sobel_core.cpp:24:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_core_XLX_SEP_ PragmaOptions=variable=linebuf0 type=ram_1p impl=bram_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS BIND_STORAGE variable=linebuf0 type=ram_1p impl=bram
+../src/sobel_core.cpp:17:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_core_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE off
 ^
-../src/sobel_core.cpp:25:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_core_XLX_SEP_ PragmaOptions=variable=linebuf1 type=ram_1p impl=bram_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS BIND_STORAGE variable=linebuf1 type=ram_1p impl=bram
+../src/sobel_core.cpp:25:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_core_XLX_SEP_ PragmaOptions=variable=linebuf0 type=ram_2p impl=bram_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=linebuf0 type=ram_2p impl=bram
 ^
-../src/sobel_core.cpp:28:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_core_XLX_SEP_ PragmaOptions=variable=window complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+../src/sobel_core.cpp:26:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_storage_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_core_XLX_SEP_ PragmaOptions=variable=linebuf1 type=ram_2p impl=bram_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_STORAGE variable=linebuf1 type=ram_2p impl=bram
+^
+../src/sobel_core.cpp:29:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_core_XLX_SEP_ PragmaOptions=variable=window complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS ARRAY_PARTITION variable=window complete dim=0
 ^
-../src/sobel_core.cpp:32:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_core_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+../src/sobel_core.cpp:33:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_core_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS PIPELINE II=1
 ^
 ../src/sobel_core.cpp:40:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL
 ^
-../src/sobel_core.cpp:48:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_core_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+../src/sobel_core.cpp:43:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+../src/sobel_core.cpp:54:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_core_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS PIPELINE II=1
 ^
-18 warnings generated.
+20 warnings generated.

@@ -85215,10 +85215,11 @@ void sobel_core(hls::stream<axis_t> &in_stream,
 
 
 void window_generator(ap_uint<8> pix,
-                      int col,
+                      ap_uint<11> col,
                       ap_uint<8> linebuf0[1920],
                       ap_uint<8> linebuf1[1920],
                       ap_uint<8> window[3][3]);
+
 
 
 void sobel_ref(const unsigned char *in,
@@ -87236,9 +87237,9 @@ static bool write_pgm(const string &filename,
 
 int main() {
 
-    const string input_file = "C:/Users/57778/Desktop/sobel/images/input1.pgm";
-    const string output_file = "C:/Users/57778/Desktop/sobel/images/output1.pgm";
-    const string golden_file = "C:/Users/57778/Desktop/sobel/images/golden1.pgm";
+    const string input_file = "C:/Users/57778/Desktop/sobel/images/input.pgm";
+    const string output_file = "C:/Users/57778/Desktop/sobel/images/output.pgm";
+    const string golden_file = "C:/Users/57778/Desktop/sobel/images/golden.pgm";
 
     vector<unsigned char> input_img;
     vector<unsigned char> golden_img;

@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2025.2 (win64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Thu Apr 23 17:21:18 2026</td></tr>
+<tr><td><b>Date</b></td><td>Sat Apr 25 21:03:34 2026</td></tr>
 <tr><td><b>Host</b></td><td>LAPTOP-MG1ABMI7 running 64-bit major release  (build 9200)</td></tr>
 <tr><td><b>Command</b></td><td>C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\Users\57778\Desktop\sobel\sobel\hls_config.cfg --work_dir sobel_top </td></tr>
 </table></center><br>
@@ -3416,7 +3416,7 @@ window.onload = function () { addSorting(); }
 <tr><td><a href="#VIOLATION DETAILS">2 VIOLATION DETAILS</a></tr></td>
 </table>
 <a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
-<pre>Violations found: 14
+<pre>Violations found: 3
 </pre>
 <pre>Rule Specs Violated: 2
 </pre>
@@ -3434,7 +3434,7 @@ window.onload = function () { addSorting(); }
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">14</td>
+<td align="left">3</td>
 <td align="left">Kernel</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3444,29 +3444,7 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">8</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel_top.Kernel</td>
-<td align="left">Cannot meet target clock period from basic block for.body33 to 'store' operation ('idx_write_ln47', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a>) of variable 'idx', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a> 22 bit on local variable 'idx', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a> (combination delay: 5.43112 ns) to honor II or Latency constraint in region 'VITIS_LOOP_47_4'.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
 <td align="left">2</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel_top.Kernel</td>
-<td align="left">Cannot meet target clock period from basic block for.inc to 'store' operation ('i_write_ln31', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=31">sobel_core.cpp</a>) of variable 'add_ln31', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=31">sobel_core.cpp</a> 11 bit on local variable 'i', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=31">sobel_core.cpp</a> (combination delay: 4.815 ns) to honor II or Latency constraint in region 'VITIS_LOOP_31_1'.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">3</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3477,118 +3455,12 @@ window.onload = function () { addSorting(); }
 </tr>
 <tr>
 <td align="left">1</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel_top.Kernel</td>
-<td align="left">Cannot meet target clock period from basic block for.inc to 'icmp' operation 1 bit ('icmp_ln31', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=31">sobel_core.cpp</a>) (combination delay: 3.227 ns) to honor II or Latency constraint in region 'VITIS_LOOP_31_1'.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">10</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel_top.Kernel</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">9</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.sobel_top.Throughput</td>
 <td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel_top.Kernel</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel_top.Kernel</td>
-<td align="left">Estimated delay Estimated delay (4.043ns)  of 'urem' operation 22 bit ('col', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=51">sobel_core.cpp</a>) exceeds the target cycle time (target cycle time: 4.000ns, clock uncertainty: 1.080ns, effective cycle time: 2.920ns).
-
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">7</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel_top.Kernel</td>
-<td align="left">Cannot meet target clock period from 'add' operation 22 bit ('idx', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a>) to 'store' operation ('idx_write_ln47', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a>) of variable 'idx', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a> 22 bit on local variable 'idx', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a> (combination delay: 3.84313 ns) to honor II or Latency constraint in region 'VITIS_LOOP_47_4'.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">12</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel_top.Kernel</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel_top.Kernel</td>
-<td align="left">The critical path in module 'sobel_core_Pipeline_VITIS_LOOP_47_4' consists of the following:
-	'store' operation ('idx_write_ln47', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a>) of constant 0 22 bit on local variable 'idx', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a> [49]  (1.588 ns)
-	'load' operation 22 bit ('idx', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a>) on local variable 'idx', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a> [56]  (0.000 ns)
-	'add' operation 22 bit ('idx', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a>) [62]  (2.255 ns)
-	'store' operation ('idx_write_ln47', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a>) of variable 'idx', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a> 22 bit on local variable 'idx', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=47">sobel_core.cpp</a> [153]  (1.588 ns)
-
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">13</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel_top.Kernel</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.sobel_top.Kernel</td>
-<td align="left">The critical path in module 'sobel_core_Pipeline_VITIS_LOOP_31_1' consists of the following:
-	'store' operation ('i_write_ln31', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=31">sobel_core.cpp</a>) of constant 0 11 bit on local variable 'i', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=31">sobel_core.cpp</a> [8]  (1.588 ns)
-	'load' operation 11 bit ('i', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=31">sobel_core.cpp</a>) on local variable 'i', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=31">sobel_core.cpp</a> [11]  (0.000 ns)
-	'add' operation 11 bit ('add_ln31', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=31">sobel_core.cpp</a>) [14]  (1.639 ns)
-	'store' operation ('i_write_ln31', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=31">sobel_core.cpp</a>) of variable 'add_ln31', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=31">sobel_core.cpp</a> 11 bit on local variable 'i', <a href="file:///C:/Users/57778/Desktop/sobel/sobel\../src/sobel_core.cpp#line=31">sobel_core.cpp</a> [24]  (1.588 ns)
-
-</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 </table>

@@ -25,10 +25,11 @@ void sobel_core(hls::stream<axis_t> &in_stream,
 
 // Window / line-buffer update
 void window_generator(ap_uint<8> pix,
-                      int col,
+                      ap_uint<11> col,
                       ap_uint<8> linebuf0[MAX_WIDTH],
                       ap_uint<8> linebuf1[MAX_WIDTH],
                       ap_uint<8> window[3][3]);
+                      
 
 // Software reference model
 void sobel_ref(const unsigned char *in,

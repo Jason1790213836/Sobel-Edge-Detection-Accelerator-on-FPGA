@@ -85222,10 +85222,11 @@ void sobel_core(hls::stream<axis_t> &in_stream,
 
 
 void window_generator(ap_uint<8> pix,
-                      int col,
+                      ap_uint<11> col,
                       ap_uint<8> linebuf0[1920],
                       ap_uint<8> linebuf1[1920],
                       ap_uint<8> window[3][3]);
+
 
 
 void sobel_ref(const unsigned char *in,
@@ -85235,12 +85236,14 @@ void sobel_ref(const unsigned char *in,
 # 2 "C:/Users/57778/Desktop/sobel/src/window_generator.cpp" 2
 
 void window_generator(ap_uint<8> pix,
-                      int col,
+                      ap_uint<11> col,
                       ap_uint<8> linebuf0[1920],
                       ap_uint<8> linebuf1[1920],
                       ap_uint<8> window[3][3]) {
 #pragma HLS INLINE
 
+    ap_uint<8> old0 = linebuf0[col];
+    ap_uint<8> old1 = linebuf1[col];
 
     window[0][0] = window[0][1];
     window[0][1] = window[0][2];
@@ -85249,12 +85252,10 @@ void window_generator(ap_uint<8> pix,
     window[2][0] = window[2][1];
     window[2][1] = window[2][2];
 
-
-    window[0][2] = linebuf0[col];
-    window[1][2] = linebuf1[col];
+    window[0][2] = old0;
+    window[1][2] = old1;
     window[2][2] = pix;
 
-
-    linebuf0[col] = linebuf1[col];
+    linebuf0[col] = old1;
     linebuf1[col] = pix;
 }

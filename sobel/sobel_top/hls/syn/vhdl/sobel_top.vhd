@@ -59,7 +59,7 @@ architecture behav of sobel_top is
     attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "sobel_top_sobel_top,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=4.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=5.431125,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=3351,HLS_SYN_LUT=2670,HLS_VERSION=2025_2}";
+    "sobel_top_sobel_top,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=8.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=5.799000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=1197,HLS_SYN_LUT=1837,HLS_VERSION=2025_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (3 downto 0) := "0001";
@@ -68,8 +68,8 @@ architecture behav of sobel_top is
     constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (3 downto 0) := "1000";
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_boolean_1 : BOOLEAN := true;
-    constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
+    constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
 
@@ -85,8 +85,10 @@ architecture behav of sobel_top is
     signal ap_ready : STD_LOGIC;
     signal width : STD_LOGIC_VECTOR (31 downto 0);
     signal height : STD_LOGIC_VECTOR (31 downto 0);
-    signal height_read_reg_118 : STD_LOGIC_VECTOR (31 downto 0);
-    signal width_read_reg_123 : STD_LOGIC_VECTOR (31 downto 0);
+    signal height_read_reg_120 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_CS_fsm_state2 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
+    signal width_read_reg_125 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_sobel_core_fu_84_ap_start : STD_LOGIC;
     signal grp_sobel_core_fu_84_ap_done : STD_LOGIC;
     signal grp_sobel_core_fu_84_ap_idle : STD_LOGIC;
@@ -102,8 +104,6 @@ architecture behav of sobel_top is
     signal grp_sobel_core_fu_84_out_stream_TID : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_sobel_core_fu_84_out_stream_TDEST : STD_LOGIC_VECTOR (0 downto 0);
     signal grp_sobel_core_fu_84_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state2 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
     signal out_stream_TDATA_reg : STD_LOGIC_VECTOR (7 downto 0);
@@ -290,8 +290,8 @@ begin
         out_stream_TLAST => grp_sobel_core_fu_84_out_stream_TLAST,
         out_stream_TID => grp_sobel_core_fu_84_out_stream_TID,
         out_stream_TDEST => grp_sobel_core_fu_84_out_stream_TDEST,
-        width => width_read_reg_123,
-        height => height_read_reg_118);
+        width => width_read_reg_125,
+        height => height_read_reg_120);
 
     CTRL_s_axi_U : component sobel_top_CTRL_s_axi
     generic map (
@@ -556,9 +556,9 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if ((ap_const_logic_1 = ap_CS_fsm_state1)) then
-                height_read_reg_118 <= height;
-                width_read_reg_123 <= width;
+            if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
+                height_read_reg_120 <= height;
+                width_read_reg_125 <= width;
             end if;
         end if;
     end process;

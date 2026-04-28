@@ -1,6 +1,6 @@
 
 set TopModule "sobel_top"
-set ClockPeriod 4
+set ClockPeriod 8
 set ClockList ap_clk
 set AxiliteClockList {}
 set HasVivadoClockPeriod 0

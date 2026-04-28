@@ -9,14 +9,14 @@ wire [2:0] inst_idle_sigs;
 wire [0:0] inst_block_sigs;
 wire kernel_block;
 
-assign axis_block_sigs[0] = ~AESL_inst_sobel_top.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101.in_stream_TDATA_blk_n;
-assign axis_block_sigs[1] = ~AESL_inst_sobel_top.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101.out_stream_TDATA_blk_n;
+assign axis_block_sigs[0] = ~AESL_inst_sobel_top.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_row_loop_col_loop_fu_101.in_stream_TDATA_blk_n;
+assign axis_block_sigs[1] = ~AESL_inst_sobel_top.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_row_loop_col_loop_fu_101.out_stream_TDATA_blk_n;
 
 assign inst_block_sigs[0] = 1'b0;
 
 assign inst_idle_sigs[0] = 1'b0;
 assign inst_idle_sigs[1] = AESL_inst_sobel_top.grp_sobel_core_fu_84.ap_idle;
-assign inst_idle_sigs[2] = AESL_inst_sobel_top.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101.ap_idle;
+assign inst_idle_sigs[2] = AESL_inst_sobel_top.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_row_loop_col_loop_fu_101.ap_idle;
 
 AESL_deadlock_idx0_monitor AESL_deadlock_idx0_monitor_U (
     .clock(kernel_monitor_clock),

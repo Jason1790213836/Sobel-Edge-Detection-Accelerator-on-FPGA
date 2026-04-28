@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "04/23/26 17:25:34",
- "timestampMillis": "1776979534463",
+ "dateTimestamp": "04/25/26 23:27:13",
+ "timestampMillis": "1777174033175",
  "buildStep": {
-  "cmdId": "f0214a4f-8e8b-4788-abff-8d952a80a6b5",
+  "cmdId": "dfb412e6-af92-457f-b57a-8cf45d41d6e8",
   "name": "vitis-run",
   "logFile": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\logs\\sobel_top.steps.log",
   "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --cosim --config C:\\Users\\57778\\Desktop\\sobel\\sobel\\hls_config.cfg --work_dir sobel_top ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/23/26 17:25:34",
- "timestampMillis": "1776979534464",
+ "dateTimestamp": "04/25/26 23:27:13",
+ "timestampMillis": "1777174033176",
  "status": {
-  "cmdId": "f0214a4f-8e8b-4788-abff-8d952a80a6b5",
+  "cmdId": "dfb412e6-af92-457f-b57a-8cf45d41d6e8",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "04/23/26 17:25:47",
- "timestampMillis": "1776979547758",
+ "dateTimestamp": "04/25/26 23:27:27",
+ "timestampMillis": "1777174047484",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -84,10 +84,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "04/23/26 17:25:47",
- "timestampMillis": "1776979547762",
+ "dateTimestamp": "04/25/26 23:27:27",
+ "timestampMillis": "1777174047489",
  "buildStep": {
-  "cmdId": "75878b85-9dc5-40aa-b0a6-899426970685",
+  "cmdId": "118fc5ab-1a42-459f-baee-5907611fa81c",
   "name": "",
   "logFile": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\hls\\hls.log",
   "commandLine": "",
@@ -100,10 +100,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/23/26 17:25:47",
- "timestampMillis": "1776979547764",
+ "dateTimestamp": "04/25/26 23:27:27",
+ "timestampMillis": "1777174047490",
  "status": {
-  "cmdId": "75878b85-9dc5-40aa-b0a6-899426970685",
+  "cmdId": "118fc5ab-1a42-459f-baee-5907611fa81c",
   "state": "CS_RUNNING"
  }
 }
@@ -111,8 +111,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/23/26 17:25:47",
- "timestampMillis": "1776979547764",
+ "dateTimestamp": "04/25/26 23:27:27",
+ "timestampMillis": "1777174047491",
  "report": {
   "path": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\hls\\sim\\report\\sobel_top_cosim.rpt",
   "name": "",
@@ -125,8 +125,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/23/26 17:25:47",
- "timestampMillis": "1776979547766",
+ "dateTimestamp": "04/25/26 23:27:27",
+ "timestampMillis": "1777174047492",
  "report": {
   "path": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\hls",
   "name": "",
@@ -139,8 +139,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/23/26 17:25:47",
- "timestampMillis": "1776979547767",
+ "dateTimestamp": "04/25/26 23:27:27",
+ "timestampMillis": "1777174047493",
  "report": {
   "path": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\hls",
   "name": "",
@@ -153,8 +153,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/23/26 17:25:47",
- "timestampMillis": "1776979547769",
+ "dateTimestamp": "04/25/26 23:27:27",
+ "timestampMillis": "1777174047494",
  "report": {
   "path": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\hls",
   "name": "",
@@ -167,13 +167,63 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/23/26 17:25:47",
- "timestampMillis": "1776979547770",
+ "dateTimestamp": "04/25/26 23:27:27",
+ "timestampMillis": "1777174047495",
  "report": {
   "path": "C:/Users\\57778\\Desktop\\sobel\\sobel\\sobel_top\\hls",
   "name": "",
   "fileType": "DIR",
   "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/25/26 23:34:55",
+ "timestampMillis": "1777174495619",
+ "status": {
+  "cmdId": "118fc5ab-1a42-459f-baee-5907611fa81c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "04/25/26 23:34:55",
+ "timestampMillis": "1777174495811",
+ "status": {
+  "cmdId": "dfb412e6-af92-457f-b57a-8cf45d41d6e8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/25/26 23:34:55",
+ "timestampMillis": "1777174495815",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "04/25/26 23:34:55",
+ "timestampMillis": "1777174495815",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
   "cmdId": ""
  }
 }

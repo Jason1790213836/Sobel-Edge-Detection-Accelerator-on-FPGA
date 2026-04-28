@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sobel_core'" level="0">
-<item name = "Date">Thu Apr 23 17:21:13 2026
+<item name = "Date">Sat Apr 25 21:03:30 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 12 2025)</item>
 <item name = "Project">sobel_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">4.00 ns, 5.431 ns, 1.08 ns</column>
+<column name="ap_clk">8.00 ns, 5.799 ns, 2.16 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2, ?, 10.862 ns, ?, 2, ?, no</column>
+<column name="">1, 3688334, 8.000 ns, 29.507 ms, 1, 3688334, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_sobel_core_Pipeline_VITIS_LOOP_31_1_fu_94">sobel_core_Pipeline_VITIS_LOOP_31_1, 3, 1922, 14.445 ns, 9.254 us, 0, 0, loop pipeline stp</column>
-<column name="grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101">sobel_core_Pipeline_VITIS_LOOP_47_4, 36, ?, 0.196 us, ?, 0, 0, loop pipeline stp</column>
+<column name="grp_sobel_core_Pipeline_init_linebuf_fu_94">sobel_core_Pipeline_init_linebuf, 3, 1922, 24.000 ns, 15.376 us, 0, 0, loop pipeline stp</column>
+<column name="grp_sobel_core_Pipeline_row_loop_col_loop_fu_101">sobel_core_Pipeline_row_loop_col_loop, 9, 3686408, 72.000 ns, 29.491 ms, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -49,23 +49,23 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 195, -</column>
+<column name="Expression">-, -, 0, 190, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 3, 3069, 1965, -</column>
+<column name="Instance">-, 1, 913, 1156, -</column>
 <column name="Memory">2, -, 0, 0, -</column>
-<column name="Multiplexer">-, -, 0, 243, -</column>
-<column name="Register">-, -, 87, -, -</column>
+<column name="Multiplexer">-, -, 0, 224, -</column>
+<column name="Register">-, -, 89, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">~0, 1, 2, 4, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, ~0, ~0, 2, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_32s_32s_32_5_1_U29">mul_32s_32s_32_5_1, 0, 3, 215, 1, 0</column>
-<column name="grp_sobel_core_Pipeline_VITIS_LOOP_31_1_fu_94">sobel_core_Pipeline_VITIS_LOOP_31_1, 0, 0, 25, 62, 0</column>
-<column name="grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101">sobel_core_Pipeline_VITIS_LOOP_47_4, 0, 0, 2829, 1902, 0</column>
+<column name="mul_11ns_11ns_22_1_1_U25">mul_11ns_11ns_22_1_1, 0, 1, 0, 6, 0</column>
+<column name="grp_sobel_core_Pipeline_init_linebuf_fu_94">sobel_core_Pipeline_init_linebuf, 0, 0, 25, 62, 0</column>
+<column name="grp_sobel_core_Pipeline_row_loop_col_loop_fu_101">sobel_core_Pipeline_row_loop_col_loop, 0, 0, 888, 1088, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -74,8 +74,8 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="linebuf0_U">sobel_core_linebuf0_RAM_1P_BRAM_2R1W, 1, 0, 0, 0, 1920, 8, 1, 15360</column>
-<column name="linebuf1_U">sobel_core_linebuf0_RAM_1P_BRAM_2R1W, 1, 0, 0, 0, 1920, 8, 1, 15360</column>
+<column name="linebuf0_U">sobel_core_linebuf0_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 1920, 8, 1, 15360</column>
+<column name="linebuf1_U">sobel_core_linebuf1_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 1920, 8, 1, 15360</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -84,30 +84,32 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln84_fu_181_p2">+, 0, 0, 29, 22, 2</column>
-<column name="ap_block_state10_on_subcall_done">and, 0, 0, 2, 1, 1</column>
-<column name="ap_predicate_op40_call_state10">and, 0, 0, 2, 1, 1</column>
-<column name="grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101_out_stream_TREADY">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln19_1_fu_153_p2">icmp, 0, 0, 39, 32, 1</column>
-<column name="icmp_ln19_fu_147_p2">icmp, 0, 0, 39, 32, 1</column>
-<column name="icmp_ln20_1_fu_168_p2">icmp, 0, 0, 39, 32, 11</column>
-<column name="icmp_ln20_fu_163_p2">icmp, 0, 0, 39, 32, 11</column>
-<column name="or_ln19_fu_159_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln20_fu_173_p2">or, 0, 0, 2, 1, 1</column>
+<column name="add_ln51_fu_202_p2">+, 0, 0, 12, 11, 2</column>
+<column name="add_ln95_fu_196_p2">+, 0, 0, 12, 11, 2</column>
+<column name="ap_block_state5_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op34_call_state5">and, 0, 0, 2, 1, 1</column>
+<column name="grp_sobel_core_Pipeline_row_loop_col_loop_fu_101_out_stream_TREADY">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln19_1_fu_154_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln19_fu_148_p2">icmp, 0, 0, 39, 32, 1</column>
+<column name="icmp_ln20_1_fu_172_p2">icmp, 0, 0, 39, 32, 11</column>
+<column name="icmp_ln20_fu_166_p2">icmp, 0, 0, 39, 32, 11</column>
+<column name="or_ln19_fu_160_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln20_fu_178_p2">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">59, 11, 1, 11</column>
+<column name="ap_NS_fsm">31, 6, 1, 6</column>
 <column name="in_stream_TREADY">9, 2, 1, 2</column>
-<column name="linebuf0_address0">14, 3, 11, 33</column>
-<column name="linebuf0_ce0">14, 3, 1, 3</column>
-<column name="linebuf0_d0">14, 3, 8, 24</column>
-<column name="linebuf0_we0">14, 3, 1, 3</column>
-<column name="linebuf1_address0">14, 3, 11, 33</column>
-<column name="linebuf1_ce0">14, 3, 1, 3</column>
-<column name="linebuf1_d0">14, 3, 8, 24</column>
-<column name="linebuf1_we0">14, 3, 1, 3</column>
+<column name="linebuf0_address1">14, 3, 11, 33</column>
+<column name="linebuf0_ce0">9, 2, 1, 2</column>
+<column name="linebuf0_ce1">14, 3, 1, 3</column>
+<column name="linebuf0_d1">14, 3, 8, 24</column>
+<column name="linebuf0_we1">14, 3, 1, 3</column>
+<column name="linebuf1_address1">14, 3, 11, 33</column>
+<column name="linebuf1_ce1">14, 3, 1, 3</column>
+<column name="linebuf1_d1">14, 3, 8, 24</column>
+<column name="linebuf1_we1">14, 3, 1, 3</column>
 <column name="out_stream_TDATA">9, 2, 8, 16</column>
 <column name="out_stream_TDEST">9, 2, 1, 2</column>
 <column name="out_stream_TID">9, 2, 1, 2</column>
@@ -119,17 +121,16 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln84_reg_239">22, 0, 22, 0</column>
-<column name="ap_CS_fsm">10, 0, 10, 0</column>
-<column name="empty_reg_198">11, 0, 11, 0</column>
-<column name="grp_sobel_core_Pipeline_VITIS_LOOP_31_1_fu_94_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101_ap_start_reg">1, 0, 1, 0</column>
-<column name="icmp_ln19_1_reg_210">1, 0, 1, 0</column>
-<column name="icmp_ln19_reg_205">1, 0, 1, 0</column>
-<column name="icmp_ln20_1_reg_224">1, 0, 1, 0</column>
-<column name="icmp_ln20_reg_219">1, 0, 1, 0</column>
-<column name="or_ln19_reg_215">1, 0, 1, 0</column>
-<column name="or_ln20_reg_229">1, 0, 1, 0</column>
+<column name="add_ln51_reg_241">11, 0, 11, 0</column>
+<column name="add_ln95_reg_236">11, 0, 11, 0</column>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
+<column name="empty_18_reg_217">11, 0, 11, 0</column>
+<column name="empty_reg_208">11, 0, 11, 0</column>
+<column name="grp_sobel_core_Pipeline_init_linebuf_fu_94_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_sobel_core_Pipeline_row_loop_col_loop_fu_101_ap_start_reg">1, 0, 1, 0</column>
+<column name="mul_ln95_reg_231">22, 0, 22, 0</column>
+<column name="or_ln19_reg_223">1, 0, 1, 0</column>
+<column name="or_ln20_reg_227">1, 0, 1, 0</column>
 <column name="out_stream_TDATA_reg">8, 0, 8, 0</column>
 <column name="out_stream_TDEST_reg">1, 0, 1, 0</column>
 <column name="out_stream_TID_reg">1, 0, 1, 0</column>
@@ -137,7 +138,6 @@
 <column name="out_stream_TLAST_reg">1, 0, 1, 0</column>
 <column name="out_stream_TSTRB_reg">1, 0, 1, 0</column>
 <column name="out_stream_TUSER_reg">1, 0, 1, 0</column>
-<column name="trunc_ln45_reg_233">22, 0, 22, 0</column>
 </table>
 </item>
 </section>

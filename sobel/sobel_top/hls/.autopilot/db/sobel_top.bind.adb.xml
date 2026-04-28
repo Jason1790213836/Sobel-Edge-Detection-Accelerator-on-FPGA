@@ -27,8 +27,11 @@
 <state_list>
 
 <state id="1" st_id="1">
+</state>
 
-<operation id="5" st_id="1" stage="1" lat="1">
+<state id="2" st_id="2">
+
+<operation id="5" st_id="2" stage="1" lat="1">
 <core>s_axilite</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -43,7 +46,7 @@ entry:24 %height_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %height
 <StgValue><ssdm name="height_read"/></StgValue>
 </operation>
 
-<operation id="6" st_id="1" stage="1" lat="1">
+<operation id="6" st_id="2" stage="1" lat="1">
 <core>s_axilite</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -57,9 +60,6 @@ entry:25 %width_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %width
 ]]></Node>
 <StgValue><ssdm name="width_read"/></StgValue>
 </operation>
-</state>
-
-<state id="2" st_id="2">
 
 <operation id="7" st_id="2" stage="2" lat="2">
 <core></core>

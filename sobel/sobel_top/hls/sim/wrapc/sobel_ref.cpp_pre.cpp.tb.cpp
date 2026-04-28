@@ -85222,10 +85222,11 @@ void sobel_core(hls::stream<axis_t> &in_stream,
 
 
 void window_generator(ap_uint<8> pix,
-                      int col,
+                      ap_uint<11> col,
                       ap_uint<8> linebuf0[1920],
                       ap_uint<8> linebuf1[1920],
                       ap_uint<8> window[3][3]);
+
 
 
 void sobel_ref(const unsigned char *in,

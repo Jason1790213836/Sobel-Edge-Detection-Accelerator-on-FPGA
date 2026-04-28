@@ -9,24 +9,24 @@
     "instructions": 7,
     "memory_accesses": 0,
     "name": "sobel_top",
-    "total_instructions": 292
+    "total_instructions": 373
   },
   "1": {
-    "basicblocks": 14,
+    "basicblocks": 16,
     "calls": "",
     "control_depth": 2,
-    "def_use_depth": 16,
+    "def_use_depth": 12,
     "file": "sobel_core.cpp",
-    "fileloc": 15,
-    "instructions": 271,
+    "fileloc": 13,
+    "instructions": 352,
     "loads": {
       "L": 9
     },
-    "memory_accesses": 21,
+    "memory_accesses": 18,
     "name": "sobel_core",
     "stores": {
-      "L": 23
+      "L": 29
     },
-    "total_instructions": 285
+    "total_instructions": 366
   }
 }

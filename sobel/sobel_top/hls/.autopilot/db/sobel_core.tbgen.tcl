@@ -117,53 +117,54 @@ set NewPortList {[
 
 set ArgLastReadFirstWriteLatency {
 	sobel_core {
-		in_stream_V_data_V {Type I LastRead 27 FirstWrite -1}
-		in_stream_V_keep_V {Type I LastRead 27 FirstWrite -1}
-		in_stream_V_strb_V {Type I LastRead 27 FirstWrite -1}
-		in_stream_V_user_V {Type I LastRead 27 FirstWrite -1}
-		in_stream_V_last_V {Type I LastRead 27 FirstWrite -1}
-		in_stream_V_id_V {Type I LastRead 27 FirstWrite -1}
-		in_stream_V_dest_V {Type I LastRead 27 FirstWrite -1}
-		out_stream_V_data_V {Type O LastRead -1 FirstWrite 34}
-		out_stream_V_keep_V {Type O LastRead -1 FirstWrite 34}
-		out_stream_V_strb_V {Type O LastRead -1 FirstWrite 34}
-		out_stream_V_user_V {Type O LastRead -1 FirstWrite 34}
-		out_stream_V_last_V {Type O LastRead -1 FirstWrite 34}
-		out_stream_V_id_V {Type O LastRead -1 FirstWrite 34}
-		out_stream_V_dest_V {Type O LastRead -1 FirstWrite 34}
+		in_stream_V_data_V {Type I LastRead 1 FirstWrite -1}
+		in_stream_V_keep_V {Type I LastRead 1 FirstWrite -1}
+		in_stream_V_strb_V {Type I LastRead 1 FirstWrite -1}
+		in_stream_V_user_V {Type I LastRead 1 FirstWrite -1}
+		in_stream_V_last_V {Type I LastRead 1 FirstWrite -1}
+		in_stream_V_id_V {Type I LastRead 1 FirstWrite -1}
+		in_stream_V_dest_V {Type I LastRead 1 FirstWrite -1}
+		out_stream_V_data_V {Type O LastRead -1 FirstWrite 7}
+		out_stream_V_keep_V {Type O LastRead -1 FirstWrite 7}
+		out_stream_V_strb_V {Type O LastRead -1 FirstWrite 7}
+		out_stream_V_user_V {Type O LastRead -1 FirstWrite 7}
+		out_stream_V_last_V {Type O LastRead -1 FirstWrite 7}
+		out_stream_V_id_V {Type O LastRead -1 FirstWrite 7}
+		out_stream_V_dest_V {Type O LastRead -1 FirstWrite 7}
 		width {Type I LastRead 0 FirstWrite -1}
 		height {Type I LastRead 0 FirstWrite -1}}
-	sobel_core_Pipeline_VITIS_LOOP_31_1 {
+	sobel_core_Pipeline_init_linebuf {
 		empty {Type I LastRead 0 FirstWrite -1}
 		linebuf0 {Type O LastRead -1 FirstWrite 1}
 		linebuf1 {Type O LastRead -1 FirstWrite 1}}
-	sobel_core_Pipeline_VITIS_LOOP_47_4 {
-		total {Type I LastRead 0 FirstWrite -1}
+	sobel_core_Pipeline_row_loop_col_loop {
 		width {Type I LastRead 0 FirstWrite -1}
-		in_stream_V_data_V {Type I LastRead 27 FirstWrite -1}
-		in_stream_V_keep_V {Type I LastRead 27 FirstWrite -1}
-		in_stream_V_strb_V {Type I LastRead 27 FirstWrite -1}
-		in_stream_V_user_V {Type I LastRead 27 FirstWrite -1}
-		in_stream_V_last_V {Type I LastRead 27 FirstWrite -1}
-		in_stream_V_id_V {Type I LastRead 27 FirstWrite -1}
-		in_stream_V_dest_V {Type I LastRead 27 FirstWrite -1}
-		linebuf0 {Type IO LastRead 29 FirstWrite 29}
-		linebuf1 {Type IO LastRead 27 FirstWrite 27}
-		empty {Type I LastRead 0 FirstWrite -1}
-		add_ln84 {Type I LastRead 0 FirstWrite -1}
-		out_stream_V_data_V {Type O LastRead -1 FirstWrite 34}
-		out_stream_V_keep_V {Type O LastRead -1 FirstWrite 34}
-		out_stream_V_strb_V {Type O LastRead -1 FirstWrite 34}
-		out_stream_V_user_V {Type O LastRead -1 FirstWrite 34}
-		out_stream_V_last_V {Type O LastRead -1 FirstWrite 34}
-		out_stream_V_id_V {Type O LastRead -1 FirstWrite 34}
-		out_stream_V_dest_V {Type O LastRead -1 FirstWrite 34}}}
+		mul_ln95 {Type I LastRead 0 FirstWrite -1}
+		zext_ln53_1 {Type I LastRead 0 FirstWrite -1}
+		add_ln95 {Type I LastRead 0 FirstWrite -1}
+		in_stream_V_data_V {Type I LastRead 1 FirstWrite -1}
+		in_stream_V_keep_V {Type I LastRead 1 FirstWrite -1}
+		in_stream_V_strb_V {Type I LastRead 1 FirstWrite -1}
+		in_stream_V_user_V {Type I LastRead 1 FirstWrite -1}
+		in_stream_V_last_V {Type I LastRead 1 FirstWrite -1}
+		in_stream_V_id_V {Type I LastRead 1 FirstWrite -1}
+		in_stream_V_dest_V {Type I LastRead 1 FirstWrite -1}
+		linebuf0 {Type IO LastRead 2 FirstWrite 3}
+		linebuf1 {Type IO LastRead 1 FirstWrite 1}
+		add_ln51 {Type I LastRead 0 FirstWrite -1}
+		out_stream_V_data_V {Type O LastRead -1 FirstWrite 7}
+		out_stream_V_keep_V {Type O LastRead -1 FirstWrite 7}
+		out_stream_V_strb_V {Type O LastRead -1 FirstWrite 7}
+		out_stream_V_user_V {Type O LastRead -1 FirstWrite 7}
+		out_stream_V_last_V {Type O LastRead -1 FirstWrite 7}
+		out_stream_V_id_V {Type O LastRead -1 FirstWrite 7}
+		out_stream_V_dest_V {Type O LastRead -1 FirstWrite 7}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "2", "Max" : "-1"}
-	, {"Name" : "Interval", "Min" : "2", "Max" : "-1"}
+	{"Name" : "Latency", "Min" : "1", "Max" : "3688334"}
+	, {"Name" : "Interval", "Min" : "1", "Max" : "3688334"}
 ]}
 
 set PipelineEnableSignalInfo {[

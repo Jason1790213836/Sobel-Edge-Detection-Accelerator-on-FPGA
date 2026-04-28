@@ -1,6 +1,6 @@
 `timescale 1 ns / 1 ps
 
-module AESL_deadlock_idx2_monitor ( // for module AESL_inst_sobel_top.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_VITIS_LOOP_47_4_fu_101
+module AESL_deadlock_idx2_monitor ( // for module AESL_inst_sobel_top.grp_sobel_core_fu_84.grp_sobel_core_Pipeline_row_loop_col_loop_fu_101
     input wire clock,
     input wire reset,
     input wire [1:0] axis_block_sigs,

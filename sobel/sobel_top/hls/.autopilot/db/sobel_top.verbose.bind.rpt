@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'sobel_top'
 ================================================================
-* Date:           Thu Apr 23 17:21:11 2026
+* Date:           Sat Apr 25 21:03:28 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 12 2025)
 * Project:        sobel_top
@@ -20,26 +20,26 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  4.00 ns|  5.431 ns|     1.08 ns|
+    |ap_clk  |  8.00 ns|  5.799 ns|     2.16 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+----------+-----+-----+---------+
-    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
-    |   min   |   max   |    min    |    max   | min | max |   Type  |
-    +---------+---------+-----------+----------+-----+-----+---------+
-    |        5|        ?|  27.156 ns|         ?|    6|    ?|       no|
-    +---------+---------+-----------+----------+-----+-----+---------+
+    +---------+---------+-----------+-----------+-----+---------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline|
+    |   min   |   max   |    min    |    max    | min |   max   |   Type  |
+    +---------+---------+-----------+-----------+-----+---------+---------+
+    |        4|  3688337|  32.000 ns|  29.507 ms|    5|  3688338|       no|
+    +---------+---------+-----------+-----------+-----+---------+---------+
 
     + Detail: 
         * Instance: 
-        +----------------------+------------+---------+---------+-----------+----------+-----+-----+---------+
-        |                      |            |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
-        |       Instance       |   Module   |   min   |   max   |    min    |    max   | min | max |   Type  |
-        +----------------------+------------+---------+---------+-----------+----------+-----+-----+---------+
-        |grp_sobel_core_fu_84  |sobel_core  |        2|        ?|  10.862 ns|         ?|    2|    ?|       no|
-        +----------------------+------------+---------+---------+-----------+----------+-----+-----+---------+
+        +----------------------+------------+---------+---------+----------+-----------+-----+---------+---------+
+        |                      |            |  Latency (cycles) |  Latency (absolute)  |    Interval   | Pipeline|
+        |       Instance       |   Module   |   min   |   max   |    min   |    max    | min |   max   |   Type  |
+        +----------------------+------------+---------+---------+----------+-----------+-----+---------+---------+
+        |grp_sobel_core_fu_84  |sobel_core  |        1|  3688334|  8.000 ns|  29.507 ms|    1|  3688334|       no|
+        +----------------------+------------+---------+---------+----------+-----------+-----+---------+---------+
 
         * Loop: 
         N/A
@@ -82,12 +82,12 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.00>
-ST_1 : Operation 5 [1/1] (1.00ns)   --->   "%height_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %height" [../src/sobel_top.cpp:3]   --->   Operation 5 'read' 'height_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 6 [1/1] (1.00ns)   --->   "%width_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %width" [../src/sobel_top.cpp:3]   --->   Operation 6 'read' 'width_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+State 1 <SV = 0> <Delay = 0.00>
 
-State 2 <SV = 1> <Delay = 2.55>
-ST_2 : Operation 7 [2/2] (2.55ns)   --->   "%call_ln14 = call void @sobel_core, i8 %in_stream_V_data_V, i1 %in_stream_V_keep_V, i1 %in_stream_V_strb_V, i1 %in_stream_V_user_V, i1 %in_stream_V_last_V, i1 %in_stream_V_id_V, i1 %in_stream_V_dest_V, i8 %out_stream_V_data_V, i1 %out_stream_V_keep_V, i1 %out_stream_V_strb_V, i1 %out_stream_V_user_V, i1 %out_stream_V_last_V, i1 %out_stream_V_id_V, i1 %out_stream_V_dest_V, i32 %width_read, i32 %height_read" [../src/sobel_top.cpp:14]   --->   Operation 7 'call' 'call_ln14' <Predicate = true> <Delay = 2.55> <CoreType = "Generic">   --->   Generic Core
+State 2 <SV = 1> <Delay = 4.53>
+ST_2 : Operation 5 [1/1] (1.00ns)   --->   "%height_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %height" [../src/sobel_top.cpp:3]   --->   Operation 5 'read' 'height_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 6 [1/1] (1.00ns)   --->   "%width_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %width" [../src/sobel_top.cpp:3]   --->   Operation 6 'read' 'width_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 7 [2/2] (3.53ns)   --->   "%call_ln14 = call void @sobel_core, i8 %in_stream_V_data_V, i1 %in_stream_V_keep_V, i1 %in_stream_V_strb_V, i1 %in_stream_V_user_V, i1 %in_stream_V_last_V, i1 %in_stream_V_id_V, i1 %in_stream_V_dest_V, i8 %out_stream_V_data_V, i1 %out_stream_V_keep_V, i1 %out_stream_V_strb_V, i1 %out_stream_V_user_V, i1 %out_stream_V_last_V, i1 %out_stream_V_id_V, i1 %out_stream_V_dest_V, i32 %width_read, i32 %height_read" [../src/sobel_top.cpp:14]   --->   Operation 7 'call' 'call_ln14' <Predicate = true> <Delay = 3.53> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
 ST_3 : Operation 8 [1/2] (0.00ns)   --->   "%call_ln14 = call void @sobel_core, i8 %in_stream_V_data_V, i1 %in_stream_V_keep_V, i1 %in_stream_V_strb_V, i1 %in_stream_V_user_V, i1 %in_stream_V_last_V, i1 %in_stream_V_id_V, i1 %in_stream_V_dest_V, i8 %out_stream_V_data_V, i1 %out_stream_V_keep_V, i1 %out_stream_V_strb_V, i1 %out_stream_V_user_V, i1 %out_stream_V_last_V, i1 %out_stream_V_id_V, i1 %out_stream_V_dest_V, i32 %width_read, i32 %height_read" [../src/sobel_top.cpp:14]   --->   Operation 8 'call' 'call_ln14' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -155,8 +155,8 @@ Port [ height]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; ext
 
 <LifeTime>
 <method=bitvector/>
-height_read              (read               ) [ 00110]
-width_read               (read               ) [ 00110]
+height_read              (read               ) [ 00010]
+width_read               (read               ) [ 00010]
 call_ln14                (call               ) [ 00000]
 spectopmodule_ln3        (spectopmodule      ) [ 00000]
 specinterface_ln0        (specinterface      ) [ 00000]
@@ -518,11 +518,11 @@ ret_ln15                 (ret                ) [ 00000]
 <pin_list>
 <pin id="73" dir="0" index="0" bw="32" slack="0"/>
 <pin id="74" dir="0" index="1" bw="32" slack="0"/>
-<pin id="75" dir="1" index="2" bw="32" slack="1"/>
+<pin id="75" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="height_read/1 "/>
+<opset="height_read/2 "/>
 </bind>
 </comp>
 
@@ -530,11 +530,11 @@ ret_ln15                 (ret                ) [ 00000]
 <pin_list>
 <pin id="79" dir="0" index="0" bw="32" slack="0"/>
 <pin id="80" dir="0" index="1" bw="32" slack="0"/>
-<pin id="81" dir="1" index="2" bw="32" slack="1"/>
+<pin id="81" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="width_read/1 "/>
+<opset="width_read/2 "/>
 </bind>
 </comp>
 
@@ -555,8 +555,8 @@ ret_ln15                 (ret                ) [ 00000]
 <pin id="97" dir="0" index="12" bw="1" slack="0"/>
 <pin id="98" dir="0" index="13" bw="1" slack="0"/>
 <pin id="99" dir="0" index="14" bw="1" slack="0"/>
-<pin id="100" dir="0" index="15" bw="32" slack="1"/>
-<pin id="101" dir="0" index="16" bw="32" slack="1"/>
+<pin id="100" dir="0" index="15" bw="32" slack="0"/>
+<pin id="101" dir="0" index="16" bw="32" slack="0"/>
 <pin id="102" dir="1" index="17" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -565,20 +565,20 @@ ret_ln15                 (ret                ) [ 00000]
 </bind>
 </comp>
 
-<comp id="118" class="1005" name="height_read_reg_118">
+<comp id="120" class="1005" name="height_read_reg_120">
 <pin_list>
-<pin id="119" dir="0" index="0" bw="32" slack="1"/>
-<pin id="120" dir="1" index="1" bw="32" slack="1"/>
+<pin id="121" dir="0" index="0" bw="32" slack="1"/>
+<pin id="122" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="height_read "/>
 </bind>
 </comp>
 
-<comp id="123" class="1005" name="width_read_reg_123">
+<comp id="125" class="1005" name="width_read_reg_125">
 <pin_list>
-<pin id="124" dir="0" index="0" bw="32" slack="1"/>
-<pin id="125" dir="1" index="1" bw="32" slack="1"/>
+<pin id="126" dir="0" index="0" bw="32" slack="1"/>
+<pin id="127" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="width_read "/>
@@ -626,13 +626,17 @@ ret_ln15                 (ret                ) [ 00000]
 
 <net id="117"><net_src comp="26" pin="0"/><net_sink comp="84" pin=14"/></net>
 
-<net id="121"><net_src comp="72" pin="2"/><net_sink comp="118" pin=0"/></net>
+<net id="118"><net_src comp="78" pin="2"/><net_sink comp="84" pin=15"/></net>
 
-<net id="122"><net_src comp="118" pin="1"/><net_sink comp="84" pin=16"/></net>
+<net id="119"><net_src comp="72" pin="2"/><net_sink comp="84" pin=16"/></net>
 
-<net id="126"><net_src comp="78" pin="2"/><net_sink comp="123" pin=0"/></net>
+<net id="123"><net_src comp="72" pin="2"/><net_sink comp="120" pin=0"/></net>
 
-<net id="127"><net_src comp="123" pin="1"/><net_sink comp="84" pin=15"/></net>
+<net id="124"><net_src comp="120" pin="1"/><net_sink comp="84" pin=16"/></net>
+
+<net id="128"><net_src comp="78" pin="2"/><net_sink comp="125" pin=0"/></net>
+
+<net id="129"><net_src comp="125" pin="1"/><net_sink comp="84" pin=15"/></net>
 
 </net_list>
 
@@ -656,8 +660,8 @@ ret_ln15                 (ret                ) [ 00000]
 	Port: sobel_top : in_stream_V_last_V | {2 3 }
 	Port: sobel_top : in_stream_V_id_V | {2 3 }
 	Port: sobel_top : in_stream_V_dest_V | {2 3 }
-	Port: sobel_top : width | {1 }
-	Port: sobel_top : height | {1 }
+	Port: sobel_top : width | {2 }
+	Port: sobel_top : height | {2 }
   - Chain level:
 	State 1
 	State 2
@@ -673,12 +677,12 @@ ret_ln15                 (ret                ) [ 00000]
 |----------|------------------------|---------|---------|---------|---------|---------|
 | Operation|     Functional Unit    |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|------------------------|---------|---------|---------|---------|---------|
-|   call   |  grp_sobel_core_fu_84  |    2    |    3    |   7.94  |   2849  |   1763  |
+|   call   |  grp_sobel_core_fu_84  |    2    |    1    |  6.352  |   615   |   931   |
 |----------|------------------------|---------|---------|---------|---------|---------|
 |   read   | height_read_read_fu_72 |    0    |    0    |    0    |    0    |    0    |
 |          |  width_read_read_fu_78 |    0    |    0    |    0    |    0    |    0    |
 |----------|------------------------|---------|---------|---------|---------|---------|
-|   Total  |                        |    2    |    3    |   7.94  |   2849  |   1763  |
+|   Total  |                        |    2    |    1    |  6.352  |   615   |   931   |
 |----------|------------------------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -688,18 +692,21 @@ N/A
 +-------------------+--------+
 |                   |   FF   |
 +-------------------+--------+
-|height_read_reg_118|   32   |
-| width_read_reg_123|   32   |
+|height_read_reg_120|   32   |
+| width_read_reg_125|   32   |
 +-------------------+--------+
 |       Total       |   64   |
 +-------------------+--------+
 
 * Multiplexer (MUX) list: 
-|--------|------|------|------|--------|
-|  Comp  |  Pin | Size |  BW  | S x BW |
-|--------|------|------|------|--------|
-|  Total |      |      |      |    0   |
-|--------|------|------|------|--------|
+|----------------------|------|------|------|--------||---------||---------||---------|
+|         Comp         |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
+|----------------------|------|------|------|--------||---------||---------||---------|
+| grp_sobel_core_fu_84 |  p15 |   2  |  32  |   64   ||    0    ||    9    |
+| grp_sobel_core_fu_84 |  p16 |   2  |  32  |   64   ||    0    ||    9    |
+|----------------------|------|------|------|--------||---------||---------||---------|
+|         Total        |      |      |      |   128  ||  3.176  ||    0    ||    18   |
+|----------------------|------|------|------|--------||---------||---------||---------|
 
 
 
@@ -707,10 +714,10 @@ N/A
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    2   |    3   |    7   |  2849  |  1763  |
+|  Function |    2   |    1   |    6   |   615  |   931  |
 |   Memory  |    -   |    -   |    -   |    -   |    -   |
-|Multiplexer|    -   |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    3   |    0   |   18   |
 |  Register |    -   |    -   |    -   |   64   |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |    2   |    3   |    7   |  2913  |  1763  |
+|   Total   |    2   |    1   |    9   |   679  |   949  |
 +-----------+--------+--------+--------+--------+--------+
