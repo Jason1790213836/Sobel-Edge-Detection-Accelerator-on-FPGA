@@ -12,13 +12,13 @@ The accelerator processes grayscale images and outputs edge-detected results usi
 
 ### FPGA Board (PYNQ-Z2)
 
-![PYNQ Board](./images/show.jpg)
+![PYNQ Board](./images/show.png)
 
 
 
 ### Input vs FPGA Output
 
-![Result](./images/fpga.jpg)
+![Result](./images/fpga.png)
 
 
 
