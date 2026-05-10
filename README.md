@@ -225,9 +225,9 @@ ap_uint<12> mag;
 
 The maximum Sobel magnitude for 8-bit pixels fits within 12 bits. This reduces LUT usage and shortens the combinational path compared with default 32-bit integer arithmetic.
 
-### 5. Shift-Based Multiply-by-2
+### 5. Shift-Based Sobel Coefficients
 
-The Sobel coefficients of 2 are implemented with shifts:
+The Sobel coefficients of 2 are implemented using shifts, such as `(p10 << 1)` instead of explicit multiplication by 2:
 
 ```cpp
 (p10 << 1)
@@ -236,7 +236,13 @@ The Sobel coefficients of 2 are implemented with shifts:
 (p21 << 1)
 ```
 
-This avoids unnecessary multiplier hardware.
+This avoids using general-purpose multipliers for the Sobel weighting terms. The HLS synthesis report still shows **1 DSP** used in the overall design. This does not come from an explicit Sobel multiplication in the source code; it is likely introduced by HLS during surrounding control, indexing, or arithmetic optimization. Since the design uses only **1 DSP out of 220** available DSP blocks on the Zynq-7020 device, DSP usage is negligible for this accelerator.
+
+Benefits:
+
+- Avoids explicit multiplication for Sobel coefficient-2 terms
+- Keeps DSP usage negligible in the final HLS estimate
+- Reduces arithmetic complexity in the Sobel datapath
 
 ### 6. AXI-Stream Framing
 
@@ -276,11 +282,13 @@ INFO: [SIM 211-1] CSim done with 0 errors.
 
 This confirms that the streaming HLS implementation matches the software Sobel reference for the tested image.
 
+The full C simulation log is available at [`reports/hls_run_csim.log`](./reports/hls_run_csim.log).
+
 ---
 
 ## HLS Synthesis Results
 
-The design was synthesized using **Vitis HLS 2025.2** targeting the PYNQ-Z2 device `xc7z020-clg400-1`.
+The design was synthesized using **Vitis HLS 2025.2** targeting the PYNQ-Z2 device `xc7z020-clg400-1`. The full HLS synthesis report is available at [`reports/sobel_top_csynth.rpt`](./reports/sobel_top_csynth.rpt).
 
 ### Timing Estimate
 
@@ -364,6 +372,8 @@ PASS: HLS output matches golden reference.
 CSim done with 0 errors.
 ```
 
+The committed C simulation evidence is available at [`reports/hls_run_csim.log`](./reports/hls_run_csim.log).
+
 ### Run C Synthesis
 
 ```bash
@@ -372,7 +382,9 @@ vitis-run --mode hls --config sobel/hls_config.cfg --synth
 
 The generated synthesis report should include timing, latency, and utilization estimates similar to the tables above.
 
-### Recommended Report Directory
+The committed synthesis evidence is available at [`reports/sobel_top_csynth.rpt`](./reports/sobel_top_csynth.rpt).
+
+### Report Directory
 
 To make the repository easy to inspect, keep report evidence in a dedicated directory:
 
