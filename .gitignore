@@ -13,10 +13,6 @@ _ide/
 *.str
 compile_commands.json
 
-# Ignore generated logs by default, but keep curated report artifacts
-*.log
-!reports/*.log
-!reports/*.rpt
 
 # HLS/Vivado build outputs
 *.runs/
