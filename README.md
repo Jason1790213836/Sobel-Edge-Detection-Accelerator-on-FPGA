@@ -8,17 +8,17 @@ The IP receives one grayscale pixel per AXI-Stream packet, maintains two line bu
 
 ---
 
-## Verification Artifacts
+## Committed Verification Reports
 
-The verification evidence is committed in the [`reports/`](./reports) directory.
+The following report files are committed in this repository and can be inspected directly:
 
 Full C simulation log: [`reports/hls_run_csim.log`](./reports/hls_run_csim.log)
 
-HLS C simulation build log: `reports/sobel_top_csim.log`
+HLS C simulation log: `reports/sobel_top_csim.log`
 
 Full HLS synthesis report: [`reports/sobel_top_csynth.rpt`](./reports/sobel_top_csynth.rpt)
 
-These committed report files support the functional simulation PASS result, HLS timing estimate, latency estimate, and BRAM/DSP/LUT/FF utilization tables summarized in this README.
+The synthesis report provides the timing estimate, latency estimate, initiation interval, and resource utilization numbers used in the tables below.
 
 ## Demo
 
