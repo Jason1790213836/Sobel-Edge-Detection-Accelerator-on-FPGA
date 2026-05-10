@@ -6,19 +6,7 @@ This project implements a **hardware-accelerated Sobel edge detection filter** u
 
 The IP receives one grayscale pixel per AXI-Stream packet, maintains two line buffers and a 3×3 sliding window internally, computes Sobel gradients, clips the magnitude to 8 bits, and streams the result back to the processing system through AXI DMA.
 
----
 
-## Committed Verification Reports
-
-The following report files are committed in this repository and can be inspected directly:
-
-Full C simulation log: [`reports/hls_run_csim.log`](./reports/hls_run_csim.log)
-
-HLS C simulation log: `reports/sobel_top_csim.log`
-
-Full HLS synthesis report: [`reports/sobel_top_csynth.rpt`](./reports/sobel_top_csynth.rpt)
-
-The synthesis report provides the timing estimate, latency estimate, initiation interval, and resource utilization numbers used in the tables below.
 
 ## Demo
 
@@ -290,6 +278,16 @@ This confirms that the streaming HLS implementation matches the software Sobel r
 
 ![CSIM](./images/csim.png)
 
+### Functional Test Coverage
+
+| Test Case       | Image Size | Input Pattern             | Expected Behavior                       | Result |
+| --------------- | ---------: | ------------------------- | --------------------------------------- | ------ |
+| Main image test |  784 × 786 | Real grayscale image      | Matches software `sobel_ref()`          | PASS   |
+| Small image     |      8 × 8 | Simple gradient           | Matches software `sobel_ref()`          | PASS   |
+| All-zero image  |    64 × 64 | All pixels = 0            | Output all zeros                        | PASS   |
+| Constant image  |    64 × 64 | All pixels = 128          | Output all zeros except border behavior | PASS   |
+| Edge pattern    |    64 × 64 | Vertical black/white edge | Strong edge response near boundary      | PASS   |
+
 ---
 
 ## HLS Synthesis Results
@@ -392,15 +390,19 @@ vitis-run --mode hls --config sobel/hls_config.cfg --synth
 
 The generated synthesis report should include timing, latency, and utilization estimates similar to the tables above.
 
-### Recommended Report Directory
+## Committed Verification Reports
 
-To make the repository easy to inspect, keep report evidence in a dedicated directory:
+The following report files are committed in this repository and can be inspected directly:
 
-```text
-reports/
-    hls_run_csim.log
-    sobel_top_csynth.rpt
-```
+Full C simulation log: [`reports/hls_run_csim.log`](./reports/hls_run_csim.log)
+
+HLS C simulation log: `reports/sobel_top_csim.log`
+
+Full HLS synthesis report: [`reports/sobel_top_csynth.rpt`](./reports/sobel_top_csynth.rpt)
+
+The synthesis report provides the timing estimate, latency estimate, initiation interval, and resource utilization numbers used in the tables below.
+
+
 
 ---
 
