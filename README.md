@@ -402,7 +402,230 @@ Full HLS synthesis report: [`reports/sobel_top_csynth.rpt`](./reports/sobel_top_
 
 The synthesis report provides the timing estimate, latency estimate, initiation interval, and resource utilization numbers used in the tables below.
 
+================================================================
 
+### hls_run_csim.log
+
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir C:/Users/57778/Desktop/sobel/sobel/sobel_top 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/57778/Desktop/sobel/sobel/sobel_top/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/57778/Desktop/sobel/sobel/sobel_top'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../src/sobel.hpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/57778/Desktop/sobel/src/sobel.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../src/sobel_core.cpp' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/Users/57778/Desktop/sobel/src/sobel_core.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../src/sobel_top.cpp' from hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/57778/Desktop/sobel/src/sobel_top.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../src/window_generator.cpp' from hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/Users/57778/Desktop/sobel/src/window_generator.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../src/sobel_ref.cpp' from hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/Users/57778/Desktop/sobel/src/sobel_ref.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../tb/tb_sobel.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/57778/Desktop/sobel/tb/tb_sobel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=sobel_top' from hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=125Mhz' from hls_config.cfg(9)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 8ns.
+INFO: [HLS 200-1465] Applying config ini 'cosim.trace_level=port' from hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying config ini 'cosim.wave_debug=1' from hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/57778/Desktop/sobel/sobel/sobel_top/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Generating csim.exe
+Input image size: 784 x 786
+PASS: HLS output matches golden reference.
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 616224
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 5 seconds. Total elapsed time: 13.387 seconds; peak allocated memory: 151.902 MB.
+
+### **sobel_top_csynth.rpt**
+
+#### == Vitis HLS Report for 'sobel_top'
+* Date:           Sat Apr 25 21:03:30 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 12 2025)
+* Project:        sobel_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+#### == Performance Estimates
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  8.00 ns|  5.799 ns|     2.16 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+---------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline|
+    |   min   |   max   |    min    |    max    | min |   max   |   Type  |
+    +---------+---------+-----------+-----------+-----+---------+---------+
+    |        4|  3688337|  32.000 ns|  29.507 ms|    5|  3688338|       no|
+    +---------+---------+-----------+-----------+-----+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------+------------+---------+---------+----------+-----------+-----+---------+---------+
+        |                      |            |  Latency (cycles) |  Latency (absolute)  |    Interval   | Pipeline|
+        |       Instance       |   Module   |   min   |   max   |    min   |    max    | min |   max   |   Type  |
+        +----------------------+------------+---------+---------+----------+-----------+-----+---------+---------+
+        |grp_sobel_core_fu_84  |sobel_core  |        1|  3688334|  8.000 ns|  29.507 ms|    1|  3688334|       no|
+        +----------------------+------------+---------+---------+----------+-----------+-----+---------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+#### == Utilization Estimates
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        2|    1|    1114|   1738|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     97|    -|
+|Register         |        -|    -|      83|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        2|    1|    1197|   1837|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       ~0|   ~0|       1|      3|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------+------------+---------+----+------+------+-----+
+    |       Instance       |   Module   | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +----------------------+------------+---------+----+------+------+-----+
+    |CTRL_s_axi_U          |CTRL_s_axi  |        0|   0|   112|   168|    0|
+    |grp_sobel_core_fu_84  |sobel_core  |        2|   1|  1002|  1570|    0|
+    +----------------------+------------+---------+----+------+------+-----+
+    |Total                 |            |        2|   1|  1114|  1738|    0|
+    +----------------------+------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------------+----------+----+---+----+------------+------------+
+    |              Variable Name             | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------+----------+----+---+----+------------+------------+
+    |grp_sobel_core_fu_84_out_stream_TREADY  |       and|   0|  0|   2|           1|           1|
+    +----------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                   |          |   0|  0|   2|           1|           1|
+    +----------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------+----+-----------+-----+-----------+
+    |              Name             | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                      |  25|          5|    1|          5|
+    |in_stream_TREADY_int_regslice  |   9|          2|    1|          2|
+    |out_stream_TDATA_int_regslice  |   9|          2|    8|         16|
+    |out_stream_TDEST_int_regslice  |   9|          2|    1|          2|
+    |out_stream_TID_int_regslice    |   9|          2|    1|          2|
+    |out_stream_TKEEP_int_regslice  |   9|          2|    1|          2|
+    |out_stream_TLAST_int_regslice  |   9|          2|    1|          2|
+    |out_stream_TSTRB_int_regslice  |   9|          2|    1|          2|
+    |out_stream_TUSER_int_regslice  |   9|          2|    1|          2|
+    +-------------------------------+----+-----------+-----+-----------+
+    |Total                          |  97|         21|   16|         35|
+    +-------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------+----+----+-----+-----------+
+    |                Name               | FF | LUT| Bits| Const Bits|
+    +-----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                          |   4|   0|    4|          0|
+    |grp_sobel_core_fu_84_ap_start_reg  |   1|   0|    1|          0|
+    |height_read_reg_120                |  32|   0|   32|          0|
+    |out_stream_TDATA_reg               |   8|   0|    8|          0|
+    |out_stream_TDEST_reg               |   1|   0|    1|          0|
+    |out_stream_TID_reg                 |   1|   0|    1|          0|
+    |out_stream_TKEEP_reg               |   1|   0|    1|          0|
+    |out_stream_TLAST_reg               |   1|   0|    1|          0|
+    |out_stream_TSTRB_reg               |   1|   0|    1|          0|
+    |out_stream_TUSER_reg               |   1|   0|    1|          0|
+    |width_read_reg_125                 |  32|   0|   32|          0|
+    +-----------------------------------+----+----+-----+-----------+
+    |Total                              |  83|   0|   83|          0|
+    +-----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+#### == Interface
+* Summary: 
++--------------------+-----+-----+------------+---------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++--------------------+-----+-----+------------+---------------------+--------------+
+|s_axi_CTRL_AWVALID  |   in|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_AWREADY  |  out|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_AWADDR   |   in|    5|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_WVALID   |   in|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_WREADY   |  out|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_WDATA    |   in|   32|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_WSTRB    |   in|    4|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_ARVALID  |   in|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_ARREADY  |  out|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_ARADDR   |   in|    5|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_RVALID   |  out|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_RREADY   |   in|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_RDATA    |  out|   32|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_RRESP    |  out|    2|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_BVALID   |  out|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_BREADY   |   in|    1|       s_axi|                 CTRL|        scalar|
+|s_axi_CTRL_BRESP    |  out|    2|       s_axi|                 CTRL|        scalar|
+|ap_clk              |   in|    1|  ap_ctrl_hs|            sobel_top|  return value|
+|ap_rst_n            |   in|    1|  ap_ctrl_hs|            sobel_top|  return value|
+|interrupt           |  out|    1|  ap_ctrl_hs|            sobel_top|  return value|
+|in_stream_TDATA     |   in|    8|        axis|   in_stream_V_data_V|       pointer|
+|in_stream_TVALID    |   in|    1|        axis|   in_stream_V_dest_V|       pointer|
+|in_stream_TREADY    |  out|    1|        axis|   in_stream_V_dest_V|       pointer|
+|in_stream_TDEST     |   in|    1|        axis|   in_stream_V_dest_V|       pointer|
+|in_stream_TKEEP     |   in|    1|        axis|   in_stream_V_keep_V|       pointer|
+|in_stream_TSTRB     |   in|    1|        axis|   in_stream_V_strb_V|       pointer|
+|in_stream_TUSER     |   in|    1|        axis|   in_stream_V_user_V|       pointer|
+|in_stream_TLAST     |   in|    1|        axis|   in_stream_V_last_V|       pointer|
+|in_stream_TID       |   in|    1|        axis|     in_stream_V_id_V|       pointer|
+|out_stream_TDATA    |  out|    8|        axis|  out_stream_V_data_V|       pointer|
+|out_stream_TVALID   |  out|    1|        axis|  out_stream_V_dest_V|       pointer|
+|out_stream_TREADY   |   in|    1|        axis|  out_stream_V_dest_V|       pointer|
+|out_stream_TDEST    |  out|    1|        axis|  out_stream_V_dest_V|       pointer|
+|out_stream_TKEEP    |  out|    1|        axis|  out_stream_V_keep_V|       pointer|
+|out_stream_TSTRB    |  out|    1|        axis|  out_stream_V_strb_V|       pointer|
+|out_stream_TUSER    |  out|    1|        axis|  out_stream_V_user_V|       pointer|
+|out_stream_TLAST    |  out|    1|        axis|  out_stream_V_last_V|       pointer|
+|out_stream_TID      |  out|    1|        axis|    out_stream_V_id_V|       pointer|
++--------------------+-----+-----+------------+---------------------+--------------+
 
 ---
 
