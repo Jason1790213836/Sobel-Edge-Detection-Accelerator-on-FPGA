@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'sobel_core_Pipeline_row_loop_col_loop'
 ================================================================
-* Date:           Sat Apr 25 21:03:27 2026
+* Date:           Sun May 10 00:38:21 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 12 2025)
 * Project:        sobel_top
@@ -278,7 +278,7 @@ Target clock period: 8.000ns, clock uncertainty: 2.160ns.
 The critical path consists of the following:
 	'store' operation ('store_ln0') of constant 0 22 bit on local variable 'indvar_flatten' [52]  (1.588 ns)
 	'load' operation 22 bit ('indvar_flatten_load', ../src/sobel_core.cpp:51) on local variable 'indvar_flatten' [67]  (0.000 ns)
-	'add' operation 22 bit ('add_ln51_1', ../src/sobel_core.cpp:51) [73]  (2.255 ns)
+	'icmp' operation 1 bit ('icmp_ln51', ../src/sobel_core.cpp:51) [72]  (2.255 ns)
 	'store' operation ('store_ln51', ../src/sobel_core.cpp:51) of variable 'add_ln51_1', ../src/sobel_core.cpp:51 22 bit on local variable 'indvar_flatten' [174]  (1.588 ns)
 
  <State 2>: 5.585ns

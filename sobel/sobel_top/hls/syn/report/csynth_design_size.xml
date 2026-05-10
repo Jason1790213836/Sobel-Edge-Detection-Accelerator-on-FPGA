@@ -33,9 +33,9 @@
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
                 <row id="0" col0="sobel_top" col1="sobel_top.cpp:3" col2="3423" col3="330" col4="370" col5="302" col6="236">
-                    <row id="4" col0="sobel_core" col1="sobel_core.cpp:13" col2="3414" col3="323" col4="349" col5="281" col6="208">
-                        <row id="2" col0="window_generator" col1="window_generator.cpp:3" col2="84" col3="" col4="" col5="" col6=""/>
-                        <row id="1" col0="abs12" col1="sobel_core.cpp:3" col2="404" col2_disp=" 404 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="1" col0="sobel_core" col1="sobel_core.cpp:13" col2="3414" col3="323" col4="349" col5="281" col6="208">
+                        <row id="4" col0="window_generator" col1="window_generator.cpp:3" col2="84" col3="" col4="" col5="" col6=""/>
+                        <row id="2" col0="abs12" col1="sobel_core.cpp:3" col2="404" col2_disp=" 404 (2 calls)" col3="" col4="" col5="" col6=""/>
                         <row id="3" col0="clip_u8_12" col1="sobel_core.cpp:8" col2="82" col3="" col4="" col5="" col6=""/>
                     </row>
                 </row>

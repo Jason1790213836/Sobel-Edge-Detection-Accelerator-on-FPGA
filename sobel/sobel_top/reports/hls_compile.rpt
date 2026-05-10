@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'sobel_top'
 ================================================================
 + General Information: 
-    * Date:           Sat Apr 25 21:03:30 2026
+    * Date:           Sun May 10 00:38:24 2026
     * Version:        2025.2 (Build 6295257 on Nov 12 2025)
     * Project:        sobel_top
     * Solution:       hls (Vivado IP Flow Target)

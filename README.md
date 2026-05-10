@@ -24,11 +24,11 @@ The synthesis report provides the timing estimate, latency estimate, initiation 
 
 ### FPGA Board (PYNQ-Z2)
 
-![PYNQ Board](./images/show.png)
+![PYNQ Board](./images/fpga.png)
 
 ### Input vs FPGA Output
 
-![Result](./images/fpga.png)
+![PYNQ Board](./images/show.png)
 
 ---
 
@@ -288,6 +288,8 @@ INFO: [SIM 211-1] CSim done with 0 errors.
 
 This confirms that the streaming HLS implementation matches the software Sobel reference for the tested image.
 
+![CSIM](./images/csim.png)
+
 ---
 
 ## HLS Synthesis Results
@@ -306,6 +308,8 @@ The design was synthesized using **Vitis HLS 2025.2** targeting the PYNQ-Z2 devi
 
 The estimated HLS clock period is below the 8 ns target, so the design meets the requested 125 MHz HLS timing target.
 
+![Csynth](./images/csynth.png)
+
 ### Latency Estimate
 
 | Metric | Value |
@@ -316,6 +320,8 @@ The estimated HLS clock period is below the 8 ns target, so the design meets the
 | `sobel_core` Maximum Latency | 3,688,334 cycles |
 
 The top-level latency includes control overhead, line-buffer initialization, and full-frame streaming. The main pixel-processing loop is pipelined with `II=1`, so the steady-state throughput is one pixel per cycle after pipeline fill.
+
+![Csynth](./images/time.png)
 
 ### Resource Utilization Estimate
 
@@ -328,6 +334,8 @@ The top-level latency includes control overhead, line-buffer initialization, and
 | URAM | 0 | 0 | 0% |
 
 The design uses only two BRAM blocks for the line buffers and a small amount of LUT/FF logic for stream control, window registers, and Sobel arithmetic. This leaves substantial FPGA resources available for future extensions such as multi-pixel-per-cycle processing or video-pipeline integration.
+
+![Csynth](./images/utilize.png)
 
 ---
 

@@ -50032,6 +50032,7 @@ void window_generator(ap_uint<8> pix,
                       ap_uint<8> window[3][3]);
 
 
+
 void sobel_ref(const unsigned char *in,
                unsigned char *out,
                int width,

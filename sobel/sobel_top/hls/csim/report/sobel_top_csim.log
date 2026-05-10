@@ -1,4 +1,5 @@
 INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../../tb/tb_sobel.cpp in debug mode
    Generating csim.exe
 Input image size: 784 x 786
 PASS: HLS output matches golden reference.

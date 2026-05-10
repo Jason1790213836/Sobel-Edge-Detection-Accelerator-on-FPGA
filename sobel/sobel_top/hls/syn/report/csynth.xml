@@ -823,7 +823,7 @@
     </ModuleInformation>
     <FIFOInformation/>
     <UserConfigCommands>
-        <config_cosim trace_level="port" wave_debug="1"/>
+        <config_cosim wave_debug="0"/>
     </UserConfigCommands>
     <Args>
         <Arg ArgName="in_stream" index="0" direction="in" srcType="stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 1UL, 1UL, 1UL, (unsigned char)'8', false&gt;, 0&gt;&amp;" srcSize="56">
