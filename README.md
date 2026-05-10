@@ -8,6 +8,18 @@ The IP receives one grayscale pixel per AXI-Stream packet, maintains two line bu
 
 ---
 
+## Verification Artifacts
+
+The verification evidence is committed in the [`reports/`](./reports) directory.
+
+Full C simulation log: [`reports/hls_run_csim.log`](./reports/hls_run_csim.log)
+
+HLS C simulation build log: `reports/sobel_top_csim.log`
+
+Full HLS synthesis report: [`reports/sobel_top_csynth.rpt`](./reports/sobel_top_csynth.rpt)
+
+These committed report files support the functional simulation PASS result, HLS timing estimate, latency estimate, and BRAM/DSP/LUT/FF utilization tables summarized in this README.
+
 ## Demo
 
 ### FPGA Board (PYNQ-Z2)
