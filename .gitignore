@@ -5,20 +5,34 @@ _ide/
 **/_ide/
 .idea/
 
-# Vitis/Vivado generated files
+# clangd / language server cache
 .cache/
 **/.cache/
+compile_commands.json
+**/compile_commands.json
+
+# Vitis/Vivado generated files
 *.cache/
+**/*.cache/
+*.runs/
+**/*.runs/
+*.gen/
+**/*.gen/
+*.hw/
+**/*.hw/
+*.ip_user_files/
+**/*.ip_user_files/
 *.jou
 *.str
-compile_commands.json
+dfx_runtime.txt
+**/dfx_runtime.txt
 
+# Ignore generated logs by default, but keep curated report artifacts
+*.log
+!reports/*.log
+!reports/*.rpt
 
-# HLS/Vivado build outputs
-*.runs/
-*.gen/
-*.hw/
-*.ip_user_files/
+# HLS build outputs
 solution*/
 csim/
 cosim/
