@@ -19,13 +19,13 @@ void sobel_core(hls::stream<axis_t> &in_stream,
     if (width <= 0 || height <= 0) return;
     if (width > MAX_WIDTH || height > MAX_HEIGHT) return;
 
-    ap_uint<8> linebuf0[MAX_WIDTH];
+    ap_uint<8> linebuf0[MAX_WIDTH];//bram
     ap_uint<8> linebuf1[MAX_WIDTH];
 
 #pragma HLS BIND_STORAGE variable=linebuf0 type=ram_2p impl=bram
 #pragma HLS BIND_STORAGE variable=linebuf1 type=ram_2p impl=bram
 
-    ap_uint<8> window[3][3];
+    ap_uint<8> window[3][3];//partirion into register
 #pragma HLS ARRAY_PARTITION variable=window complete dim=0
 
 init_linebuf:

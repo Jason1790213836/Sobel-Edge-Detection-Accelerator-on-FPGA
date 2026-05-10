@@ -1,22 +1,30 @@
-# Ignore build output directory
-/build
-/export
+# Vitis / Vivado generated files
+.vitis/
+.vivado/
+.ide/
+_ide/
+.cache/
+*.cache/
+*.runs/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.jou
+*.str
 
-# Ignore object files and dependent files
-.o
-.d
+# Keep intentional evidence under reports/
+*.log
+!reports/*.log
+!reports/*.rpt
 
-#Ignore logs folder and log files
-/logs
-.log
+# VSCode / clangd
+.vscode/
+compile_commands.json
+.cache/clangd/
 
-#Ignore lock files
-.lock
-
-.bin
-.pdi
-.vitisWorkspace.json
-
-_ide/logs
-_ide/.wsdata
-
+# Build outputs
+*.o
+*.exe
+csim/
+cosim/
+solution*/

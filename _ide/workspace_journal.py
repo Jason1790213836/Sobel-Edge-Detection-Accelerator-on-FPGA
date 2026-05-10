@@ -1,17 +1,6 @@
-# 2026-04-25T23:12:17.157757400
+# 2026-05-09T22:13:06.520679500
 import vitis
 
 client = vitis.create_client()
 client.set_workspace(path="sobel")
-
-comp = client.get_component(name="sobel")
-comp.run(operation="CO_SIMULATION")
-
-comp.run(operation="CO_SIMULATION")
-
-comp.run(operation="PACKAGE")
-
-vitis.dispose()
-
-vitis.dispose()
 
