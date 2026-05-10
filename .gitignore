@@ -1,30 +1,27 @@
-# Vitis / Vivado generated files
-.vitis/
-.vivado/
-.ide/
+# Editor / IDE files
+.vscode/
+**/.vscode/
 _ide/
+**/_ide/
+.idea/
+
+# Vitis/Vivado generated files
 .cache/
+**/.cache/
 *.cache/
+*.jou
+*.str
+compile_commands.json
+
+# Logs: ignore generated logs, but keep curated verification logs
+*.log
+!reports/hls_run_csim.log
+
+# HLS/Vivado build outputs
 *.runs/
 *.gen/
 *.hw/
 *.ip_user_files/
-*.jou
-*.str
-
-# Keep intentional evidence under reports/
-*.log
-!reports/*.log
-!reports/*.rpt
-
-# VSCode / clangd
-.vscode/
-compile_commands.json
-.cache/clangd/
-
-# Build outputs
-*.o
-*.exe
+solution*/
 csim/
 cosim/
-solution*/
